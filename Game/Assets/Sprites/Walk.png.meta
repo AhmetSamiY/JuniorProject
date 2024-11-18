@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Image (1)_0
+      name: Walk_0
       rect:
         serializedVersion: 2
         x: 46
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a39f48747292d14e97e421833a5e2a9
-      internalID: 1762430587
+      spriteID: 5177eeda182a8494783f5a8a01fe0741
+      internalID: 1734312955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_1
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 174
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c490aae2115e674c8c82e77dce31937
-      internalID: -780116504
+      spriteID: 9168bd3cefbe4ba47b9aa35a9d23bb28
+      internalID: -537467919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_2
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 304
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfa52248ae2a5d2439c66db0a39d7f2b
-      internalID: -434022173
+      spriteID: 177ba80e4b1aa8d448ee8a8a98b1ce66
+      internalID: -129436364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_3
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 44
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bc6f95589406f04f9ad7da574e30ee6
-      internalID: 482163126
+      spriteID: a82b78a79e97214418b022b94db71b34
+      internalID: -353134398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_4
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 168
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 204df4017faef4942a9158d374eeb8ca
-      internalID: -837647896
+      spriteID: 448e64fa4a57e2845ad48382fbf771f1
+      internalID: 1862332046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_5
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 303
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2160c94d5f855244b37033d294e8ec6
-      internalID: 2063846509
+      spriteID: 06f6d13660f70dc4a9eb837c4d2ae107
+      internalID: 612595824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_6
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 48
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20ed8af04d6c094b8c0e480f75f2826
-      internalID: -523430281
+      spriteID: e1becbbf459454142821b3c37060fb67
+      internalID: -1038279921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image (1)_7
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 172
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c298445a8fb35e74e92967495466a076
-      internalID: 1361356071
+      spriteID: b594de9f09640ce4290c7f90cd47e57c
+      internalID: -696750527
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Image (1)_0: 1762430587
-      Image (1)_1: -780116504
-      Image (1)_2: -434022173
-      Image (1)_3: 482163126
-      Image (1)_4: -837647896
-      Image (1)_5: 2063846509
-      Image (1)_6: -523430281
-      Image (1)_7: 1361356071
+      Walk_0: 1734312955
+      Walk_1: -537467919
+      Walk_2: -129436364
+      Walk_3: -353134398
+      Walk_4: 1862332046
+      Walk_5: 612595824
+      Walk_6: -1038279921
+      Walk_7: -696750527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

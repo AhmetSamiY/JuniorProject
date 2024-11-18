@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float DashPower;  
     [SerializeField] private float DashTime;
     [SerializeField] private float DashCooldown;
+    [SerializeField] private float LastClickTime;
+    [SerializeField] private float DoubleClickThreshold;
 
     [Header("WeaponParameters")]
     [SerializeField] Projectile ProjectilePF;
@@ -27,12 +29,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool isFacingRight;
     [SerializeField] private bool canDash;
     [SerializeField] private bool isDashing;
+    [SerializeField] private bool Attacking;
+    [SerializeField] private bool isBlocking;
+    //[SerializeField] private bool isJumping;
 
     [Header("Components")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask GroundLayers;
+    [SerializeField] private Animator animatorr;
 
+
+    
+    
 
     void Start()
     {
@@ -61,6 +70,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             JumpBufferTimer = JumpBufferTime;
+
+
         }
         else
         {
@@ -86,7 +97,9 @@ public class PlayerController : MonoBehaviour
         }
         Flip();
         Throw();
-
+        Attack();
+        Block();
+        animatorCheck();
     }
 
     private void FixedUpdate()
@@ -96,6 +109,46 @@ public class PlayerController : MonoBehaviour
             return;
         }
         rb.velocity = new Vector2(Horizontal * Speed * Time.deltaTime, rb.velocity.y);
+    }
+     
+    void animatorCheck()
+    {
+        if (Horizontal != 0)
+        {
+            animatorr.SetBool("Walking", true);
+        }
+        else if (Horizontal == 0)
+        {
+            animatorr.SetBool("Walking", false);
+
+        }
+        if (IsGrounded())
+        {
+            animatorr.SetBool("IsGrounded", true);
+        }
+        else if (!IsGrounded())
+        {
+            animatorr.SetBool("IsGrounded", false);
+
+        }
+        if (rb.velocity.y > 0f && !IsGrounded())
+        {
+            animatorr.SetBool("Falling", false);
+
+            animatorr.SetBool("Jumping", true);
+        }
+        else if (rb.velocity.y < 0f && !IsGrounded())
+        {
+            animatorr.SetBool("Jumping", false);
+
+            animatorr.SetBool("Falling", true);
+        }
+        else
+        {
+            animatorr.SetBool("Jumping", false);
+            animatorr.SetBool("Falling", false);
+
+        }
     }
 
      void Flip()
@@ -142,11 +195,80 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void Attack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            if (Attacking == false)
+            {
+                animatorr.SetTrigger("Attack");
+                Attacking = true;
+
+            }
+            else
+            {
+                Attacking = false;
+            }
+            HandleDoubleClick();
+
+        }
+
+
+    }
+    void canAttack()
+    {
+        Attacking = false;
+    }
+
+
+    void HandleDoubleClick()
+    {
+        float timeSinceLastClick = Time.time - LastClickTime;
+   
+            if (timeSinceLastClick <= DoubleClickThreshold)
+            {
+                TriggerHeavyAttack();
+            }
+            LastClickTime = Time.time;    
+    }
+
+    void TriggerHeavyAttack()
+    {
+        animatorr.SetTrigger("HeavyAttack");
+        LastClickTime = 0f;
+    }
+
     private void Throw()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(ProjectilePF , LaunchOffset.position, transform.rotation);
+            animatorr.SetTrigger("Throw");
         }
+    }
+    void spawnShuriken()
+    {
+        Instantiate(ProjectilePF, LaunchOffset.position, transform.rotation);
+
+    }
+    private void Block()
+    {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            if (!isBlocking)
+            {
+                isBlocking = true;
+                animatorr.SetBool("IsBlocking", true);
+            }
+        }
+        else
+        {
+            if (isBlocking)
+            {
+                isBlocking = false;
+                animatorr.SetBool("IsBlocking", false);
+            }
+        }
+
     }
 }
