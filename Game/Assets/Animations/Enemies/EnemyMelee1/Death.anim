@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shuriken
+  m_Name: Death
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,21 +21,25 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -846446020, guid: 947517b77b8fc624589e148a044ec163, type: 3}
+      value: {fileID: -1382271959, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - time: 0.083333336
+      value: {fileID: 977398355, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - time: 0.16666667
+      value: {fileID: -1692069120, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
     - time: 0.25
-      value: {fileID: -1936701299, guid: 947517b77b8fc624589e148a044ec163, type: 3}
+      value: {fileID: 1879945622, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - time: 0.33333334
+      value: {fileID: 1429739792, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - time: 0.41666666
+      value: {fileID: 2007981745, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
     - time: 0.5
-      value: {fileID: -125387106, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - time: 0.75
-      value: {fileID: -1727864692, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - time: 1
-      value: {fileID: 1103710020, guid: 947517b77b8fc624589e148a044ec163, type: 3}
+      value: {fileID: 1263043624, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 4
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -52,17 +56,19 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -846446020, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - {fileID: -1936701299, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - {fileID: -125387106, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - {fileID: -1727864692, guid: 947517b77b8fc624589e148a044ec163, type: 3}
-    - {fileID: 1103710020, guid: 947517b77b8fc624589e148a044ec163, type: 3}
+    - {fileID: -1382271959, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: 977398355, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: -1692069120, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: 1879945622, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: 1429739792, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: 2007981745, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
+    - {fileID: 1263043624, guid: ff9a3f0fe7d3e584dbfb0e1aa32c01c6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.25
+    m_StopTime: 0.5833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -81,11 +87,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.75
-    functionName: spawnShuriken
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
