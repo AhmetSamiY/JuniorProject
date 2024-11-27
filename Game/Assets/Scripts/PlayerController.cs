@@ -40,8 +40,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animatorr;
 
 
-    
-    
+    public int attackDamage = 25;
+    public Transform attackPoint; // Empty GameObject at the player's weapon position
+    public float attackRange = 0.5f; // Attack radius
+    public LayerMask enemyLayers; // Define the layer enemies are on
+
 
     void Start()
     {
@@ -204,6 +207,14 @@ public class PlayerController : MonoBehaviour
             {
                 animatorr.SetTrigger("Attack");
                 Attacking = true;
+                // Detect enemies in range of the attack
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+                // Damage all enemies hit
+                foreach (Collider2D enemy in hitEnemies)
+                {
+                    enemy.GetComponent<EnemySamurai>().TakeDamage(attackDamage);
+                }
 
             }
             else
@@ -213,9 +224,17 @@ public class PlayerController : MonoBehaviour
             HandleDoubleClick();
 
         }
-
-
     }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+
+        // Draw the attack range in the editor
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
     void canAttack()
     {
         Attacking = false;

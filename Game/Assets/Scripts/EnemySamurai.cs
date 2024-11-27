@@ -25,8 +25,15 @@ public class EnemySamurai : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
 
+
+    public int maxHealth = 100;
+    public int currentHealth;
+    bool isDead = false;
+    
     void Start()
     {
+        currentHealth = maxHealth;
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -42,6 +49,10 @@ public class EnemySamurai : MonoBehaviour
 
     void Update()
     {
+        if (isDead == true)
+        {
+            return;
+        }
         if (player == null) return;
         Vector2 direction = (player.position - transform.position).normalized;
         if (direction.x > 0)
@@ -128,6 +139,29 @@ public class EnemySamurai : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        if (isDead == true)
+        {
+            return;
+        }
+        else if (isDead == false)
+        {
+            isDead = true;
+            animator.SetTrigger("Dead");
+
+        }
     }
 }
 

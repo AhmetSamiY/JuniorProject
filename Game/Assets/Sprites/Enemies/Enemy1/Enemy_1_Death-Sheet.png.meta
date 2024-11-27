@@ -128,10 +128,10 @@ TextureImporter:
         serializedVersion: 2
         x: 9
         y: 0
-        width: 38
+        width: 75
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,10 +149,10 @@ TextureImporter:
         serializedVersion: 2
         x: 98
         y: 0
-        width: 66
-        height: 50
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,10 +170,10 @@ TextureImporter:
         serializedVersion: 2
         x: 191
         y: 0
-        width: 54
-        height: 47
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,10 +191,10 @@ TextureImporter:
         serializedVersion: 2
         x: 278
         y: 0
-        width: 54
-        height: 43
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,10 +212,10 @@ TextureImporter:
         serializedVersion: 2
         x: 365
         y: 0
-        width: 54
-        height: 43
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,10 +233,10 @@ TextureImporter:
         serializedVersion: 2
         x: 447
         y: 0
-        width: 59
-        height: 35
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: Enemy_1_Death-Sheet_6
       rect:
         serializedVersion: 2
-        x: 537
+        x: 534
         y: 0
-        width: 72
-        height: 18
+        width: 75
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
