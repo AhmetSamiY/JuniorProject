@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d492fe9910d4014468a024335d0b6b1c
+guid: 0b3c7882248eaaa43a2a99911e59f5a0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,112 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.4471753, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a6b3423d12d48489d3c5543aa36937
-      internalID: -524821232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.42956695, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 911ca03012111ea45adbf2547f488ef5
-      internalID: 215710909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.27813652, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97ee4ecbabf36184b8235a4e846416fb
-      internalID: 942474086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.28517997, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8ae9b4408acadb409c278429ec4ffa1
-      internalID: -472271408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.3027883, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f6be99f8c2ade54d9edb13680b8edd6
-      internalID: -132881632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -237,12 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Enemy_1_Attack_1-Sheet_0: -524821232
-      Enemy_1_Attack_1-Sheet_1: 215710909
-      Enemy_1_Attack_1-Sheet_2: 942474086
-      Enemy_1_Attack_1-Sheet_3: -472271408
-      Enemy_1_Attack_1-Sheet_4: -132881632
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

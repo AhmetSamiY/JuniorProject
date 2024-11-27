@@ -12,7 +12,7 @@ public class EnemyMelee : MonoBehaviour
     [SerializeField] private float RayCastLength;
     [SerializeField] private float AttackDistance;
     [SerializeField] private float MoveSpeed;
-    [SerializeField] private float AttackTimer;
+    [SerializeField] private float timer;
 
     [Header("Variables")]
     [SerializeField] private RaycastHit2D hit;
@@ -31,7 +31,7 @@ public class EnemyMelee : MonoBehaviour
 
     void Awake()
     {
-        intTimer = AttackTimer;
+        intTimer = timer;
         Animatorr = GetComponent<Animator>();
     }
 
@@ -55,7 +55,7 @@ public class EnemyMelee : MonoBehaviour
 
         if (inRange == false)
         {
-            Animatorr.SetBool("canWalk", false);
+            Animatorr.SetBool("CanWalk", false);
             StopAttack();
         }
     }
@@ -84,7 +84,7 @@ public class EnemyMelee : MonoBehaviour
 
     void Move()
     {
-        Animatorr.SetBool("canWalk", true);
+        Animatorr.SetBool("CanWalk", true);
         if (!Animatorr.GetCurrentAnimatorStateInfo(0).IsName("Attack")) 
         {
             Vector2 targetPosition = new Vector2(Target.transform.position.x, transform.position.y);
@@ -96,10 +96,10 @@ public class EnemyMelee : MonoBehaviour
 
     void Attack()
     {
-        AttackTimer = intTimer;
+        timer = intTimer;
         AttackMode = true;
 
-        Animatorr.SetBool("Canwalk", false);
+        Animatorr.SetBool("CanWalk", false);
         Animatorr.SetBool("Attack", true);
     }
 
@@ -112,12 +112,12 @@ public class EnemyMelee : MonoBehaviour
 
     void Cooldown()
     {
-        AttackTimer -= Time.deltaTime;
+        timer -= Time.deltaTime;
 
-        if (AttackTimer < 0 && Cooling && AttackMode)
+        if (timer < 0 && Cooling && AttackMode)
         {
             Cooling=false;
-            AttackTimer = intTimer;
+            timer = intTimer;
         }
 
     }
