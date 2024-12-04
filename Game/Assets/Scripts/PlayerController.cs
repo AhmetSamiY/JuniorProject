@@ -17,8 +17,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float DashPower;  
     [SerializeField] private float DashTime;
     [SerializeField] private float DashCooldown;
-    [SerializeField] private float LastClickTime;
-    [SerializeField] private float DoubleClickThreshold;
+    [SerializeField] private float doubleClickTimeLimit;
+    [SerializeField] private float lastClickTime;
+
 
     [Header("WeaponParameters")]
     [SerializeField] Projectile ProjectilePF;
@@ -29,9 +30,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool isFacingRight;
     [SerializeField] private bool canDash;
     [SerializeField] private bool isDashing;
-    [SerializeField] private bool Attacking;
     [SerializeField] private bool isBlocking;
-    //[SerializeField] private bool isJumping;
+    [SerializeField] private bool isDoubleClick;
+    [SerializeField] private bool isAttackInProgress;
 
     [Header("Components")]
     [SerializeField] private Rigidbody2D rb;
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayers; // Define the layer enemies are on
 
 
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -98,9 +100,26 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+        if (Input.GetMouseButtonDown(0) && !isAttackInProgress)
+        {
+            float currentTime = Time.time;
+
+            if (lastClickTime > 0f && currentTime - lastClickTime <= doubleClickTimeLimit)
+            {
+                isDoubleClick = true;
+                isAttackInProgress = true;
+                HeavyAttack();
+            }
+            else
+            {
+                isDoubleClick = false;
+                lastClickTime = currentTime;
+                Invoke("StartAttack", doubleClickTimeLimit);
+            }
+        }
         Flip();
         Throw();
-        Attack();
         Block();
         animatorCheck();
     }
@@ -198,66 +217,37 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void Attack()
+    void StartAttack()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!isDoubleClick)
         {
-
-            if (Attacking == false)
-            {
-                animatorr.SetTrigger("Attack");
-                Attacking = true;
-                // Detect enemies in range of the attack
-                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-                // Damage all enemies hit
-                foreach (Collider2D enemy in hitEnemies)
-                {
-                    enemy.GetComponent<EnemySamurai>().TakeDamage(attackDamage);
-                }
-
-            }
-            else
-            {
-                Attacking = false;
-            }
-            HandleDoubleClick();
-
+            RegularAttack();
         }
+
     }
 
-    void OnDrawGizmosSelected()
+    void RegularAttack()
     {
-        if (attackPoint == null) return;
-
-        // Draw the attack range in the editor
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        animatorr.SetTrigger("Attack");
     }
 
-    void canAttack()
-    {
-        Attacking = false;
-    }
-
-
-    void HandleDoubleClick()
-    {
-        float timeSinceLastClick = Time.time - LastClickTime;
-   
-            if (timeSinceLastClick <= DoubleClickThreshold)
-            {
-                TriggerHeavyAttack();
-            }
-            LastClickTime = Time.time;    
-    }
-
-    void TriggerHeavyAttack()
+    void HeavyAttack()
     {
         animatorr.SetTrigger("HeavyAttack");
-        LastClickTime = 0f;
+
     }
 
+    void ResetAttack()
+    {
+        isAttackInProgress = false;
+    }
+    void ResetDoubleAttack()
+    {
+        isAttackInProgress = false;
+
+        isDoubleClick = false;
+
+    }
     private void Throw()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -277,7 +267,7 @@ public class PlayerController : MonoBehaviour
             if (!isBlocking)
             {
                 isBlocking = true;
-                animatorr.SetBool("IsBlocking", true);
+                animatorr.SetTrigger("StartBlock");
             }
         }
         else
@@ -290,4 +280,11 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    void IdleBlock()
+    {
+        animatorr.SetBool("IsBlocking", true);
+
+    }
+
+
 }

@@ -1,0 +1,473 @@
+fileFormatVersion: 2
+guid: 0261e4db5982bfa47a5b8992635cb795
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoubleAttack_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522f3e942d3f055449d6eba4abbb68dd
+      internalID: -1880082659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935fd00b35e03454ebe6504e7a8a6d8e
+      internalID: 454273191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cceaf3a4ce007545a62b439cbf322b8
+      internalID: 1973543609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbd451074fb37641af02530d63665bf
+      internalID: 216938329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53bf7c6fa47b564fb3f879ddd0ac277
+      internalID: -111272513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_5
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695662d114d96c24ba6c62f7208d3c3b
+      internalID: 563593498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5a6b7f1ea5ad34b8eb9a9f0780362b
+      internalID: -1085534490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_8
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a507de800540504496453554fade90d
+      internalID: -100655432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac2874e9aae83642a9140f52f98a331
+      internalID: -515624874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_10
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9051bb472f6ae4e4a80556c3afec9bf6
+      internalID: -1056224921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_11
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea4537b450cf4e41a35727fb88c207e
+      internalID: -2084307051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_12
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fdff21e1c0f6047a2b5b02c62150d9
+      internalID: 1030685174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_13
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7627e8470e6524e48b164ea5739894d0
+      internalID: 1919329996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_14
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557f1234bf622614293e8f6dcb988362
+      internalID: -605766836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleAttack_16
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 0
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.15, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35cd5521215ec54f8794dd325f86e0d
+      internalID: -1078669767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DoubleAttack_0: -1880082659
+      DoubleAttack_1: 454273191
+      DoubleAttack_10: -1056224921
+      DoubleAttack_11: -2084307051
+      DoubleAttack_12: 1030685174
+      DoubleAttack_13: 1919329996
+      DoubleAttack_14: -605766836
+      DoubleAttack_15: -980905391
+      DoubleAttack_16: -1078669767
+      DoubleAttack_17: -1690540950
+      DoubleAttack_2: 1973543609
+      DoubleAttack_3: 216938329
+      DoubleAttack_4: -111272513
+      DoubleAttack_5: 563593498
+      DoubleAttack_6: -1085534490
+      DoubleAttack_7: 1309296608
+      DoubleAttack_8: -100655432
+      DoubleAttack_9: -515624874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
