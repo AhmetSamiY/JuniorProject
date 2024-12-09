@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Archer_Roll_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 196
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb98304b1896e7e48839bd4774aa3964
+      internalID: -683018159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 196
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab95d115d74ebd4391ca5dcfa217e57
+      internalID: 1735050017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 196
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b555dafc0e71f6f42944f3f64a435e79
+      internalID: -1088412599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 98
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c28f300a04f234886c3becb8f31952
+      internalID: -931126721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 98
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d6294e3a9e57642a3fbb9b7efa5aac
+      internalID: -1038018747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 98
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdb6bd1abaed0948951c7474fd387ee
+      internalID: 1787998333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Roll_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce706e9a742da9540ad56113ffdf9bba
+      internalID: -1695902548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archer_Roll_0: -683018159
+      Archer_Roll_1: 1735050017
+      Archer_Roll_2: -1088412599
+      Archer_Roll_3: -931126721
+      Archer_Roll_4: -1038018747
+      Archer_Roll_5: 1787998333
+      Archer_Roll_6: -1695902548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

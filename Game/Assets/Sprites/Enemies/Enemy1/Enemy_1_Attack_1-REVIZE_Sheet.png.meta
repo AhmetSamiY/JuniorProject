@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d492fe9910d4014468a024335d0b6b1c
+guid: 7e02cee12859c0242b5d90880e665235
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_0
+      name: Enemy_1_Attack_1-REVIZE_Sheet_0
       rect:
         serializedVersion: 2
         x: 2
@@ -131,20 +131,20 @@ TextureImporter:
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0.4471753, y: 0.45}
+      pivot: {x: 0.5, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01a6b3423d12d48489d3c5543aa36937
-      internalID: -524821232
+      spriteID: 81de614106e84e14fbc9b45eac7e233f
+      internalID: -372850863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_1
+      name: Enemy_1_Attack_1-REVIZE_Sheet_1
       rect:
         serializedVersion: 2
         x: 108
@@ -152,20 +152,20 @@ TextureImporter:
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0.42956695, y: 0.45}
+      pivot: {x: 0.47, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 911ca03012111ea45adbf2547f488ef5
-      internalID: 215710909
+      spriteID: 7ec15408f9d95da479124480d69a0232
+      internalID: 1455744778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_2
+      name: Enemy_1_Attack_1-REVIZE_Sheet_2
       rect:
         serializedVersion: 2
         x: 230
@@ -173,20 +173,20 @@ TextureImporter:
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0.27813652, y: 0.45}
+      pivot: {x: 0.3, y: 0.455}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97ee4ecbabf36184b8235a4e846416fb
-      internalID: 942474086
+      spriteID: 9b342ba31586a6741a663d5aba2648aa
+      internalID: 1786593002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_3
+      name: Enemy_1_Attack_1-REVIZE_Sheet_3
       rect:
         serializedVersion: 2
         x: 336
@@ -194,35 +194,56 @@ TextureImporter:
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0.28517997, y: 0.45}
+      pivot: {x: 0.3, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ae9b4408acadb409c278429ec4ffa1
-      internalID: -472271408
+      spriteID: 146110faed009694d83b4d2a9e3c62dd
+      internalID: 394818651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_1_Attack_1-Sheet_4
+      name: Enemy_1_Attack_1-REVIZE_Sheet_4
       rect:
         serializedVersion: 2
-        x: 440
+        x: 442
         y: 0
         width: 90
         height: 90
       alignment: 9
-      pivot: {x: 0.3027883, y: 0.45}
+      pivot: {x: 0.3, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f6be99f8c2ade54d9edb13680b8edd6
-      internalID: -132881632
+      spriteID: d9f3f01080572904584697939c12f413
+      internalID: -1787390319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Attack_1-REVIZE_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 88
+        height: 90
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8288998549766b4f98d8678acbbfd5f
+      internalID: -1716633485
       vertices: []
       indices: 
       edges: []
@@ -238,11 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_1_Attack_1-Sheet_0: -524821232
-      Enemy_1_Attack_1-Sheet_1: 215710909
-      Enemy_1_Attack_1-Sheet_2: 942474086
-      Enemy_1_Attack_1-Sheet_3: -472271408
-      Enemy_1_Attack_1-Sheet_4: -132881632
+      Enemy_1_Attack_1-REVIZE_Sheet_0: -372850863
+      Enemy_1_Attack_1-REVIZE_Sheet_1: 1455744778
+      Enemy_1_Attack_1-REVIZE_Sheet_2: 1786593002
+      Enemy_1_Attack_1-REVIZE_Sheet_3: 394818651
+      Enemy_1_Attack_1-REVIZE_Sheet_4: -1787390319
+      Enemy_1_Attack_1-REVIZE_Sheet_5: -1716633485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

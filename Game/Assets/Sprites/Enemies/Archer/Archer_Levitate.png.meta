@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Archer_Levitate_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 100
+        width: 37
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11aadaf00216ab942bb6734d07e3cc72
+      internalID: 287128735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Levitate_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 100
+        width: 37
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca3a6f84e0c31441ba675cf8b020e33
+      internalID: 2051129058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Levitate_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 100
+        width: 37
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e639b5d6334a6c4fa5775d1f6b74f3e
+      internalID: 2062503271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Levitate_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b28e977b2e337044a32df7bbe6cc8ea
+      internalID: -1225233860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Levitate_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293184a576e16f24c823490942556b5e
+      internalID: -94786107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_Levitate_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb219a7692e23246872915668381799
+      internalID: 296837018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archer_Levitate_0: 287128735
+      Archer_Levitate_1: 2051129058
+      Archer_Levitate_2: 2062503271
+      Archer_Levitate_3: -1225233860
+      Archer_Levitate_4: -94786107
+      Archer_Levitate_5: 296837018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

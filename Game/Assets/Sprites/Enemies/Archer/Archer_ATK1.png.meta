@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Archer_ATK1_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 196
+        width: 64
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df288cbe586c7684792a1813ac19b6df
+      internalID: -1688477387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 196
+        width: 54
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6a51e9a61f3b24caa7b89aab1fe244
+      internalID: -957713845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 196
+        width: 45
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83766461dd3aea4f87c9ecec98344d6
+      internalID: 1386705842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 98
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcdf588c72c6bb4187095593f9f0480
+      internalID: -1658012394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 98
+        width: 58
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df31b83a8f2f6646ad0f584fb9f3b24
+      internalID: 727719564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_5
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 98
+        width: 61
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58d8a60c8d22de4c94c1b44c9578fcf
+      internalID: 1180925299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_ATK1_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 54
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45d7a3dc6939fc4ea2fdf0624963217
+      internalID: 1763300622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archer_ATK1_0: -1688477387
+      Archer_ATK1_1: -957713845
+      Archer_ATK1_2: 1386705842
+      Archer_ATK1_3: -1658012394
+      Archer_ATK1_4: 727719564
+      Archer_ATK1_5: 1180925299
+      Archer_ATK1_6: 1763300622
+      Archer_ATK1_7: -644139347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
