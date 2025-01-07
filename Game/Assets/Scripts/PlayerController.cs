@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float JumpPower;
     [SerializeField] private float CoyoteTime;
     [SerializeField] private float CoyoteTimer;
-    [SerializeField] private float JumpBufferTime; 
+    [SerializeField] private float JumpBufferTime;
     [SerializeField] private float JumpBufferTimer;
-    [SerializeField] private float DashPower;  
+    [SerializeField] private float DashPower;
     [SerializeField] private float DashTime;
     [SerializeField] private float DashCooldown;
     [SerializeField] private float doubleClickTimeLimit;
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool isFacingRight;
     [SerializeField] private bool canDash;
     [SerializeField] private bool isDashing;
+    [SerializeField] private bool AnimationPlaying;
     [SerializeField] private bool isBlocking;
     [SerializeField] private bool isDoubleClick;
     [SerializeField] private bool isAttackInProgress;
@@ -40,6 +41,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask GroundLayers;
     [SerializeField] private Animator animatorr;
 
+    [Header("Ranged")]
+    public int arrowCount = 0; // Current arrow count
+    public int ShurikenCount = 0; // Current arrow count
+    public bool CanThrowShuriken;
+    public GameObject arrowPrefab; // Prefab for the arrow to shoot
+    public Transform shootPoint; // Position where the arrow spawns
+
+    [Header("Melee")]
 
     public int attackDamage = 25;
     public Transform attackPoint; // Empty GameObject at the player's weapon position
@@ -47,15 +56,17 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayers; // Define the layer enemies are on
 
 
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        InvokeRepeating(nameof(AddShuriken), 0f, 5f);
+
     }
 
     void Update()
     {
-        if (isDashing)
+        if (isDashing || AnimationPlaying)
         {
             return;
         }
@@ -118,10 +129,21 @@ public class PlayerController : MonoBehaviour
                 Invoke("StartAttack", doubleClickTimeLimit);
             }
         }
+
+        if (arrowCount >= 1f)
+        {
+            CanThrowShuriken = false;
+        }
+        else
+        {
+            CanThrowShuriken = true;
+        }
         Flip();
         Throw();
         Block();
         animatorCheck();
+        RangedAttack();
+        
     }
 
     private void FixedUpdate()
@@ -132,7 +154,7 @@ public class PlayerController : MonoBehaviour
         }
         rb.velocity = new Vector2(Horizontal * Speed * Time.deltaTime, rb.velocity.y);
     }
-     
+
     void animatorCheck()
     {
         if (Horizontal != 0)
@@ -172,10 +194,9 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
-     void Flip()
+    void Flip()
     {
-        if (isFacingRight && Horizontal< 0f || !isFacingRight && Horizontal > 0f)
+        if (isFacingRight && Horizontal < 0f || !isFacingRight && Horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
             /*
@@ -186,12 +207,10 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayers);
     }
-
     private IEnumerator Dash()
     {
         canDash = false;
@@ -216,7 +235,6 @@ public class PlayerController : MonoBehaviour
         canDash = true;
 
     }
-
     void StartAttack()
     {
         if (!isDoubleClick)
@@ -225,18 +243,15 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
     void RegularAttack()
     {
         animatorr.SetTrigger("Attack");
     }
-
     void HeavyAttack()
     {
         animatorr.SetTrigger("HeavyAttack");
 
     }
-
     void ResetAttack()
     {
         isAttackInProgress = false;
@@ -250,9 +265,17 @@ public class PlayerController : MonoBehaviour
     }
     private void Throw()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && ShurikenCount > 0 && CanThrowShuriken)
         {
             animatorr.SetTrigger("Throw");
+            ShurikenCount--;
+        }     
+    }
+    void RangedAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && arrowCount > 0)
+        {
+            animatorr.SetTrigger("Arrow");
         }
     }
     void spawnShuriken()
@@ -272,19 +295,57 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (isBlocking)
-            {
-                isBlocking = false;
-                animatorr.SetBool("IsBlocking", false);
-            }
+            isBlocking = false;
         }
-
     }
-    void IdleBlock()
+    private void BlockBool()
+    {
+        isBlocking = false;
+    }
+    /*void IdleBlock()
     {
         animatorr.SetBool("IsBlocking", true);
 
+    }*/
+    public void AddArrow()
+    {
+        arrowCount++;
+        Debug.Log("Arrow Collected! Total Arrows: " + arrowCount);
+    }
+
+    private void ShootArrow()
+    {
+        // Decrease arrow count
+        arrowCount--;
+
+        // Instantiate the arrow at the shoot point
+        if (arrowPrefab != null && shootPoint != null)
+        {
+            Instantiate(arrowPrefab, shootPoint.position, shootPoint.rotation);
+        }
+
+        Debug.Log("Arrow Shot! Remaining Arrows: " + arrowCount);
     }
 
 
+    void AddShuriken()
+    {
+        if (ShurikenCount >= 10) // Example: Stop at 10 shurikens
+        {
+            CancelInvoke(nameof(AddShuriken)); // Stops the repeated calls
+            Debug.Log("Max shurikens reached!");
+            return;
+        }
+
+        ShurikenCount += 1;
+        Debug.Log("Added 1 shuriken! Total: " + ShurikenCount);
+    }
+    void StopInput()
+    {
+        AnimationPlaying = true;
+    }
+    void StartInput()
+    {
+        AnimationPlaying = false;
+    }
 }

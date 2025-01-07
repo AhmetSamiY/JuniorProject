@@ -11,7 +11,7 @@ public class EnemySamurai : MonoBehaviour
     public float attackRange;
 
     [Header("Attack")]
-    public float attackCooldown; // Time between attacks
+    public float attackCooldown; 
     public int attackDamage;
 
     [Header("Jump Detection")]
@@ -51,12 +51,37 @@ public class EnemySamurai : MonoBehaviour
     void Update()
     {
         if (player == null) return;
+        if (IsGrounded())
+        {
+            animator.SetBool("IsGrounded", true);
+        }
+        else if (!IsGrounded())
+        {
+            animator.SetBool("IsGrounded", false);
 
+        }
+        if (rb.velocity.y > 0f && !IsGrounded())
+        {
+            //animatorr.SetBool("Falling", false);
+
+            animator.SetBool("Jumping", true);
+        }
+        /*else if (rb.velocity.y < 0f && !IsGrounded())
+        {
+            animatorr.SetBool("Jumping", false);
+
+            animatorr.SetBool("Falling", true);
+        }*/
+        else
+        {
+            animator.SetBool("Jumping", false);
+        }
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (distanceToPlayer <= attackRange)
         {
-            // Attack the player
+            animator.SetBool("isMoving", false);
+
             if (attackTimer <= 0f && !isAttacking)
             {
                 StartAttack();
@@ -64,12 +89,10 @@ public class EnemySamurai : MonoBehaviour
         }
         else if (distanceToPlayer <= chaseRange)
         {
-            // Chase the player
             ChasePlayer();
         }
         else
         {
-            // Stop moving
             rb.velocity = new Vector2(0, rb.velocity.y);
             animator.SetBool("isMoving", false);
         }
@@ -83,7 +106,6 @@ public class EnemySamurai : MonoBehaviour
 
         Vector2 direction = (player.position - transform.position).normalized;
 
-        // Check for obstacles and gaps
         bool isGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
         bool isObstacleAhead = Physics2D.Raycast(obstacleCheck.position, Vector2.right * Mathf.Sign(direction.x), obstacleCheckDistance, groundLayer);
 
@@ -114,7 +136,6 @@ public class EnemySamurai : MonoBehaviour
         if (IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            animator.SetTrigger("Jump");
         }
     }
 
@@ -148,7 +169,6 @@ public class EnemySamurai : MonoBehaviour
 
     public void EndAttack()
     {
-        // Called at the end of the attack animation
         isAttacking = false;
         attackTimer = attackCooldown;
     }
