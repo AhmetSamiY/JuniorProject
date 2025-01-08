@@ -25,9 +25,13 @@ public class OlderEnemy : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
-
+    public int maxHealth; // Maximum health of the enemy
+    public int currentHealth;
+    public bool dead;
     void Start()
     {
+        currentHealth = maxHealth;
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -42,7 +46,7 @@ public class OlderEnemy : MonoBehaviour
     }
 
     void Update()
-    {
+    {   if (dead) return;
         if (player == null) return;
         
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -97,23 +101,6 @@ public class OlderEnemy : MonoBehaviour
         rb.velocity = new Vector2(0, rb.velocity.y); // Stop horizontal movement
         animator.SetTrigger("Attack");
     }
-
-    public void PerformAttack()
-    {
-        // Called via Animation Event during the attack animation
-        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayer);
-
-        if (hitPlayer != null)
-        {
-            // Damage the player
-            /*/PlayerHealth playerHealth = hitPlayer.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(attackDamage);
-            }*/
-        }
-    }
-
     public void EndAttack()
     {
         isAttacking = false;
@@ -129,10 +116,29 @@ public class OlderEnemy : MonoBehaviour
         }
 
     }
+    public void PerformAttack()
+    {
+        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayer);
 
-    /*public void TakeDamage(int damage)
+        if (hitPlayer != null)
+        {
+            // Get the PlayerHealth component of the hit player
+            PlayerController playerHealth = hitPlayer.GetComponent<PlayerController>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(attackDamage);
+            }
+        }
+    }
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        animator.SetTrigger("HitTaken");
+
+        Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
+
+        // Check if the enemy is dead
         if (currentHealth <= 0)
         {
             Die();
@@ -141,15 +147,9 @@ public class OlderEnemy : MonoBehaviour
 
     void Die()
     {
-        if (isDead == true)
-        {
-            return;
-        }
-        else if (isDead == false)
-        {
-            isDead = true;
-            animator.SetTrigger("Dead");
+        dead = true;
+        Debug.Log($"{gameObject.name} has died!");
+        animator.SetTrigger("Dead");
+    }
 
-        }
-    }*/
 }

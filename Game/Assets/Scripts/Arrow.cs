@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    private Transform player; // The player's Transform
-
+    private Transform player;
+    public int damage; 
+    public LayerMask playerLayer;
     void Start()
     {
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -34,12 +35,25 @@ public class Arrow : MonoBehaviour
     {
        
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("Ground"))
+        if (((1 << collision.gameObject.layer) & playerLayer) != 0)
         {
+            PlayerController playerHealth = collision.gameObject.GetComponent<PlayerController>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+
+            // Destroy the projectile after it hits the player
             Destroy(gameObject);
         }
+        
+          
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
 

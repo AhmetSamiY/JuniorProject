@@ -33,8 +33,13 @@ public class EnemySamurai : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
 
+    public int maxHealth; // Maximum health of the enemy
+    public int currentHealth;
+    public bool dead;
     void Start()
     {
+        currentHealth = maxHealth;
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -50,6 +55,7 @@ public class EnemySamurai : MonoBehaviour
 
     void Update()
     {
+        if (dead == true) return;
         if (player == null) return;
         if (IsGrounded())
         {
@@ -159,17 +165,17 @@ public class EnemySamurai : MonoBehaviour
 
     public void PerformAttack()
     {
-        // Called via Animation Event during the attack animation
         Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayer);
 
         if (hitPlayer != null)
         {
-            // Damage the player
-            /*/PlayerHealth playerHealth = hitPlayer.GetComponent<PlayerHealth>();
+            // Get the PlayerHealth component of the hit player
+            PlayerController playerHealth = hitPlayer.GetComponent<PlayerController>();
+
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(attackDamage);
-            }*/
+            }
         }
     }
 
@@ -199,10 +205,14 @@ public class EnemySamurai : MonoBehaviour
             Gizmos.DrawLine(obstacleCheck.position, obstacleCheck.position + Vector3.right * obstacleCheckDistance * Mathf.Sign(transform.localScale.x));
         }
     }
-
-    /*public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
+        if (dead) return;
         currentHealth -= damage;
+        animator.SetTrigger("HitTaken");
+        Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
+
+        // Check if the enemy is dead
         if (currentHealth <= 0)
         {
             Die();
@@ -211,16 +221,10 @@ public class EnemySamurai : MonoBehaviour
 
     void Die()
     {
-        if (isDead == true)
-        {
-            return;
-        }
-        else if (isDead == false)
-        {
-            isDead = true;
-            animator.SetTrigger("Dead");
-
-        }
-    }*/
+        if (dead) return;
+        dead = true;
+        Debug.Log($"{gameObject.name} has died!");
+        animator.SetTrigger("Dead");
+    }
 }
 

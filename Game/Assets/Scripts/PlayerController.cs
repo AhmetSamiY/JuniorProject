@@ -55,10 +55,13 @@ public class PlayerController : MonoBehaviour
     public float attackRange = 0.5f; // Attack radius
     public LayerMask enemyLayers; // Define the layer enemies are on
 
-
+    public int maxHealth;
+    public int currentHealth;
 
     void Start()
     {
+        currentHealth = maxHealth;
+
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating(nameof(AddShuriken), 0f, 5f);
 
@@ -347,5 +350,56 @@ public class PlayerController : MonoBehaviour
     void StartInput()
     {
         AnimationPlaying = false;
+    }
+    void PerformAttack()
+    {
+         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            BossController BossHP = enemy.GetComponent<BossController>();
+            OlderEnemy olderEnemyHP = enemy.GetComponent<OlderEnemy>();
+            EnemySamurai EnemySamuraiHP = enemy.GetComponent<EnemySamurai>();
+            EnemyArcher ArcherHP = enemy.GetComponent<EnemyArcher>();
+            if (BossHP != null)
+            {
+                BossHP.TakeDamage(attackDamage);
+            }
+            else if (olderEnemyHP != null)
+            {
+                olderEnemyHP.TakeDamage(attackDamage);
+            }
+            else if (ArcherHP != null)
+            {
+                ArcherHP.TakeDamage(attackDamage);
+            }
+            else if (EnemySamuraiHP != null)
+            {
+                EnemySamuraiHP.TakeDamage(attackDamage);
+            }
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackPoint.transform.position, attackRange);
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    public Transform Respawn;
+    void Die()
+    {
+        Debug.Log($"{gameObject.name} has died!");
+        transform.position = Respawn.position;
+        currentHealth = maxHealth;
     }
 }

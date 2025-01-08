@@ -18,7 +18,6 @@ public class EnemyArcher : MonoBehaviour
     private float lastShotTime;
     public bool movingToB = true;
     public GameObject arrowDropPrefab;
-    public bool Dead;
     public Rigidbody2D rb;
     Animator animatorr;
 
@@ -36,9 +35,13 @@ public class EnemyArcher : MonoBehaviour
     private float dashTimer = 0f;
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer
 
-
+    public int maxHealth; // Maximum health of the enemy
+    public int currentHealth;
+    public bool dead;
     private void Start()
     {
+        currentHealth = maxHealth;
+
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer
         playertagged = GameObject.FindGameObjectWithTag("Player")?.transform;
@@ -53,7 +56,7 @@ public class EnemyArcher : MonoBehaviour
     }
     private void Update()
     {
-        if (Dead)
+        if (dead)
         {
             return;
         }
@@ -91,7 +94,6 @@ public class EnemyArcher : MonoBehaviour
 
             }
         }
-        TestDie();
     }
 
     private void AimAtPlayer()
@@ -154,19 +156,8 @@ public class EnemyArcher : MonoBehaviour
 
     public float HP = 10f;
 
-    void TestDie()
-    {
-        if (HP <= 0)
-        {
-            Die();
-        }
-    }
-    public void Die()
-    {
-        Instantiate(arrowDropPrefab, transform.position, Quaternion.identity);
-        animatorr.SetTrigger("Dead");
-        Dead = true;
-    }
+    
+    
 
     private void StartDash()
     {
@@ -217,5 +208,25 @@ public class EnemyArcher : MonoBehaviour
         // Draw detection range in the editor
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, dashdetectionrange);
+    }
+
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
+
+        // Check if the enemy is dead
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        dead = true;
+        Debug.Log($"{gameObject.name} has died!");
+        animatorr.SetTrigger("Dead");
     }
 }
