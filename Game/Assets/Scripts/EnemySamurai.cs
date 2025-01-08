@@ -146,6 +146,12 @@ public class EnemySamurai : MonoBehaviour
 
     void StartAttack()
     {
+        Vector2 direction = (player.position - transform.position).normalized;
+
+        if (direction.x > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (direction.x < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
         isAttacking = true;
         rb.velocity = new Vector2(0, rb.velocity.y); // Stop horizontal movement
         animator.SetTrigger("Attack");

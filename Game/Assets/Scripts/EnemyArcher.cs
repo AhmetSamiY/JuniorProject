@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyArcher : MonoBehaviour
@@ -90,6 +91,7 @@ public class EnemyArcher : MonoBehaviour
 
             }
         }
+        TestDie();
     }
 
     private void AimAtPlayer()
@@ -147,6 +149,16 @@ public class EnemyArcher : MonoBehaviour
         if (Mathf.Abs(transform.position.x - targetPoint.position.x) < 0.1f)  // Use a small threshold (0.1f)
         {
             movingToB = !movingToB;
+        }
+    }
+
+    public float HP = 10f;
+
+    void TestDie()
+    {
+        if (HP <= 0)
+        {
+            Die();
         }
     }
     public void Die()
