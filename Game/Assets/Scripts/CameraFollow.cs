@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
 
     private void follow()
     {
-        transform.position = new Vector3(player.position.x + OffSetX, 0, -10);
+        transform.position = new Vector3(player.position.x + OffSetX, player.position.y, -10);
 
     }
 }

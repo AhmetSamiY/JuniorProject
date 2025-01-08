@@ -38,6 +38,7 @@ public class EnemyArcher : MonoBehaviour
     public int maxHealth; // Maximum health of the enemy
     public int currentHealth;
     public bool dead;
+    public bool Rolling;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -56,6 +57,10 @@ public class EnemyArcher : MonoBehaviour
     }
     private void Update()
     {
+        if (Rolling)
+        {
+            return;
+        }
         if (dead)
         {
             return;
@@ -92,6 +97,7 @@ public class EnemyArcher : MonoBehaviour
                 StopDash();
                 animatorr.ResetTrigger("Roll");
 
+
             }
         }
     }
@@ -125,7 +131,15 @@ public class EnemyArcher : MonoBehaviour
             Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
             Vector2 direction = (player.position - transform.position).normalized;
             rb.AddForce(direction * shootForce, ForceMode2D.Impulse);
-            animatorr.ResetTrigger("Attack");
+            animatorr.ResetTrigger("Attack");// Flip the sprite based on dash direction
+            if (direction.x > 0 && !spriteRenderer.flipX) // Dash right
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (direction.x < 0 && spriteRenderer.flipX) // Dash left
+            {
+                spriteRenderer.flipX = false;
+            }
         }
     }
 
