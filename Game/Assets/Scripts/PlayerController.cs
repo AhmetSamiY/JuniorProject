@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float DashCooldown;
     [SerializeField] private float doubleClickTimeLimit;
     [SerializeField] private float lastClickTime;
+    [SerializeField] private HPBar Healthbar;
 
 
     [Header("WeaponParameters")]
@@ -61,7 +62,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
+        Healthbar.SetMaxHP(maxHealth);
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating(nameof(AddShuriken), 0f, 5f);
 
@@ -387,9 +388,10 @@ public class PlayerController : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        animatorr.SetTrigger("GetHit");
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
-
+        Healthbar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
             Die();
