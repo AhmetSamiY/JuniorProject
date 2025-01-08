@@ -42,6 +42,9 @@ public class BossController : MonoBehaviour
     public Transform[] arrowSpawnPoints; // Points where arrows spawn
     public float arrowSpawnInterval; // Interval between arrows
     public int numberOfArrows = 1; // Total arrows in the rain
+    public Transform ThunderSpawn;
+    public GameObject Thunder; // Drag your arrow prefab here
+    public GameObject WaveObject;
     void Start()
     {
         currentHealth = maxHealth;
@@ -251,6 +254,17 @@ public class BossController : MonoBehaviour
             }
             yield return new WaitForSeconds(arrowSpawnInterval);
         }
+    }
+
+    void SpawnThunder()
+    {
+        Instantiate(Thunder, ThunderSpawn.position, Quaternion.identity);
+
+    }
+    void SpawnWave()
+    {
+        GameObject spawnedObject = Instantiate(WaveObject, ThunderSpawn.position, transform.rotation);
+
     }
 }
     

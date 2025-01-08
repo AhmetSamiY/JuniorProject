@@ -121,7 +121,532 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wave_499x139_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 29
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8a4047de4f0044f91ea6503ab4c08f
+      internalID: 1809202525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 28
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fdcee4b75475e46b07555b461fd8d4
+      internalID: -1416786897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 27
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a90079a819b114a8a168a5478f328a
+      internalID: 1277175074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 26
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd871463ba34c541ab77f480a5c7ef7
+      internalID: 440217158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_4
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 25
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8280cdd48a55364083aa0defa789d3f
+      internalID: -1140712841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_5
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 24
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43dbb181396e940ae361f82a55963e
+      internalID: 108313769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_6
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 23
+        width: 67
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54545f8700e538a4590f6d11350dcf34
+      internalID: -1195363221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_7
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 22
+        width: 56
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e8b7a80b3029945b80db80e7cafb4c
+      internalID: -1023712339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 21
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39db52b38be4c9041bc61d0e4e5bcca7
+      internalID: -1979735954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 20
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5e0f373df46a0409eba07730e915b6
+      internalID: 704046484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_13
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 19
+        width: 61
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb78dfe25128714ea350f704b1cf16c
+      internalID: 1142940224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_15
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 18
+        width: 65
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681f725a39c8bf944941103b1730c5c7
+      internalID: 2091434808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_17
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 17
+        width: 67
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af8dd0b8fa7ac447b6428fdf0509631
+      internalID: -2136370944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_19
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 16
+        width: 66
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9876ad96c34d00c43a8e09a7c2d72403
+      internalID: -2133557838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_21
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 15
+        width: 64
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216a2d5b062487140a91231db1548f76
+      internalID: 681361953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_23
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 14
+        width: 66
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edd1049224c6404aa3db53afc713fef
+      internalID: 339065050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_25
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 13
+        width: 69
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fc7d86d12d53e41867427fb198aba0
+      internalID: 2118084406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_27
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 12
+        width: 71
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374e3cbcaf12b2c448921c66067d8912
+      internalID: -1182169975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_29
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 11
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391bc03f72b3503458931719c86cbc28
+      internalID: 60710429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_31
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 10
+        width: 71
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7fe063930d4c34797d489f0171853e
+      internalID: -1362942402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_33
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 9
+        width: 70
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c825f002fffcc4696e8c5fab706c14
+      internalID: -749309439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_35
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 7
+        width: 73
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bad3a1314580f4b9641e3912b810d2
+      internalID: -221860570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_37
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 6
+        width: 75
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221777aa0484cbb41a24143ade6b7005
+      internalID: 372378010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_39
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 5
+        width: 75
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fedc8171bbc144fb6cdf36fade7070
+      internalID: -89114586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wave_499x139_41
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 4
+        width: 75
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92651e469f6a824daf2e5bda2f3ec91
+      internalID: -592084817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +657,50 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wave_499x139_0: 1809202525
+      wave_499x139_1: -1416786897
+      wave_499x139_10: -1505391960
+      wave_499x139_11: 704046484
+      wave_499x139_12: 321588558
+      wave_499x139_13: 1142940224
+      wave_499x139_14: 1023972956
+      wave_499x139_15: 2091434808
+      wave_499x139_16: 34186793
+      wave_499x139_17: -2136370944
+      wave_499x139_18: -839727400
+      wave_499x139_19: -2133557838
+      wave_499x139_2: 1277175074
+      wave_499x139_20: 1525409423
+      wave_499x139_21: 681361953
+      wave_499x139_22: 1145698839
+      wave_499x139_23: 339065050
+      wave_499x139_24: 1742117496
+      wave_499x139_25: 2118084406
+      wave_499x139_26: 2131415198
+      wave_499x139_27: -1182169975
+      wave_499x139_28: -2098927388
+      wave_499x139_29: 60710429
+      wave_499x139_3: 440217158
+      wave_499x139_30: -65370357
+      wave_499x139_31: -1362942402
+      wave_499x139_32: 1696118906
+      wave_499x139_33: -749309439
+      wave_499x139_34: -935772022
+      wave_499x139_35: -221860570
+      wave_499x139_36: -1824463693
+      wave_499x139_37: 372378010
+      wave_499x139_38: 880246023
+      wave_499x139_39: -89114586
+      wave_499x139_4: -1140712841
+      wave_499x139_40: -936396634
+      wave_499x139_41: -592084817
+      wave_499x139_42: -1699065058
+      wave_499x139_5: 108313769
+      wave_499x139_6: -1195363221
+      wave_499x139_7: -1023712339
+      wave_499x139_8: -1579313800
+      wave_499x139_9: -1979735954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
