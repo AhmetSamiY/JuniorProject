@@ -32,9 +32,9 @@ public class BackGround : MonoBehaviour
              StartPos -= length;
          }
      }*/
-    public float parallaxEffectX = 0.5f;  // The parallax effect for X-axis
-    public float parallaxEffectY = 0.5f;  // The parallax effect for Y-axis
-    public float offsetY = 0f;            // The offset for the Y-axis (e.g., for positioning at the bottom)
+    public float parallaxEffectX;  // The parallax effect for X-axis
+    public float parallaxEffectY;  // The parallax effect for Y-axis
+    public float offsetY;            // The offset for the Y-axis (e.g., for positioning at the bottom)
 
     private float lengthX, lengthY, startPosX, startPosY;
     private Camera mainCamera;
