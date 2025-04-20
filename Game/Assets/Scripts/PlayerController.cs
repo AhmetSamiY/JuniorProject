@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour
     public bool CanThrowShuriken;
     public GameObject arrowPrefab; // Prefab for the arrow to shoot
     public Transform shootPoint; // Position where the arrow spawns
+    public GameObject CannonBall;
+    public Transform CannonshootPoint; // Position where the arrow spawns
+
 
     [Header("Melee")]
 
@@ -58,6 +61,12 @@ public class PlayerController : MonoBehaviour
 
     public int maxHealth;
     public int currentHealth;
+
+    [Header("FlameThrower")]
+    public GameObject skillArea;
+    public bool UsedFlameThrower;
+    public float flameAttackRange;
+    public float flameAttackRangeX;
 
     void Start()
     {
@@ -147,6 +156,7 @@ public class PlayerController : MonoBehaviour
         Block();
         animatorCheck();
         RangedAttack();
+        FlameThrower();
         
     }
 
@@ -331,12 +341,20 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Arrow Shot! Remaining Arrows: " + arrowCount);
     }
 
+    public void ShootCannon()
+    {
+
+        if (CannonBall != null && CannonshootPoint != null)
+        {
+            Instantiate(arrowPrefab, CannonshootPoint.position, CannonshootPoint.rotation);
+        }
+    }
 
     void AddShuriken()
     {
-        if (ShurikenCount >= 10) // Example: Stop at 10 shurikens
+        if (ShurikenCount >= 10) 
         {
-            CancelInvoke(nameof(AddShuriken)); // Stops the repeated calls
+            CancelInvoke(nameof(AddShuriken));
             Debug.Log("Max shurikens reached!");
             return;
         }
@@ -344,6 +362,7 @@ public class PlayerController : MonoBehaviour
         ShurikenCount += 1;
         Debug.Log("Added 1 shuriken! Total: " + ShurikenCount);
     }
+
     void StopInput()
     {
         AnimationPlaying = true;
@@ -352,6 +371,7 @@ public class PlayerController : MonoBehaviour
     {
         AnimationPlaying = false;
     }
+
     void PerformAttack()
     {
          Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRange, enemyLayers);
@@ -380,11 +400,72 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    
+    void FlameThrower()
+    {
+        if (UsedFlameThrower == false)
+        {
+            if (Input.GetKey(KeyCode.Alpha1))
+            {
+                //animatorr.SetTrigger("FlameThrower");
+                
+                UsedFlameThrower = true;
+
+            }
+        }
+    }
+
+    void FlameThrowerAttack()
+    {
+        Vector2 boxSize = new Vector2(flameAttackRangeX, flameAttackRange);
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.transform.position, boxSize, 0f, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            BossController BossHP = enemy.GetComponent<BossController>();
+            OlderEnemy olderEnemyHP = enemy.GetComponent<OlderEnemy>();
+            EnemySamurai EnemySamuraiHP = enemy.GetComponent<EnemySamurai>();
+            EnemyArcher ArcherHP = enemy.GetComponent<EnemyArcher>();
+            if (BossHP != null)
+            {
+                BossHP.TakeDamage(attackDamage);
+            }
+            else if (olderEnemyHP != null)
+            {
+                olderEnemyHP.TakeDamage(attackDamage);
+            }
+            else if (ArcherHP != null)
+            {
+                ArcherHP.TakeDamage(attackDamage);
+            }
+            else if (EnemySamuraiHP != null)
+            {
+                EnemySamuraiHP.TakeDamage(attackDamage);
+            }
+        }
+    }
+    
+    void CannonFire()
+    {
+        if (true)
+        {
+
+        }
+    }
+
+
+
+
+
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(attackPoint.transform.position, attackRange);
+
+        Vector2 boxSize = new Vector2(flameAttackRangeX, flameAttackRange);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(attackPoint.transform.position, boxSize);
     }
     public void TakeDamage(int damage)
     {
@@ -397,6 +478,8 @@ public class PlayerController : MonoBehaviour
             Die();
         }
     }
+
+
     public Transform Respawn;
     void Die()
     {
@@ -404,4 +487,6 @@ public class PlayerController : MonoBehaviour
         transform.position = Respawn.position;
         currentHealth = maxHealth;
     }
+
+
 }

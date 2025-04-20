@@ -36,6 +36,13 @@ public class EnemySamurai : MonoBehaviour
     public int maxHealth; // Maximum health of the enemy
     public int currentHealth;
     public bool dead;
+
+    public GameObject portalPrefab;
+    public GameObject enemyOldPrefab;
+    public Transform spawnOffsetBehind;
+
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -51,6 +58,8 @@ public class EnemySamurai : MonoBehaviour
                 player = playerObject.transform;
             }
         }
+        // Start the 30-second check coroutine when spawned
+        StartCoroutine(CheckAndSpawnOldAfterTime(30f));
     }
 
     void Update()
@@ -218,7 +227,31 @@ public class EnemySamurai : MonoBehaviour
             Die();
         }
     }
+    private IEnumerator CheckAndSpawnOldAfterTime(float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
+        if (!dead)
+        {   
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.velocity = Vector2.zero;
+                rb.bodyType = RigidbodyType2D.Static;
+            }
+            Die();
+            GameObject portal = Instantiate(portalPrefab, spawnOffsetBehind.position, Quaternion.identity);
+            StartCoroutine(SpawnEnemyOldWithDelay(portal.transform.position, portal));
+        }
+    }
+
+
+    private IEnumerator SpawnEnemyOldWithDelay(Vector3 spawnPosition, GameObject portal)
+    {
+        yield return new WaitForSeconds(1.5f); // Wait for portal animation
+        Instantiate(enemyOldPrefab, spawnPosition, Quaternion.identity);
+        Destroy(portal); // Clean up the portal
+    }
     void Die()
     {
         if (dead) return;

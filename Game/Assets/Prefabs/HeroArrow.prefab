@@ -129,10 +129,9 @@ MonoBehaviour:
   speed: 10
   lifeTime: 4
   attackDamage: 25
-  attackRange: 1
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1792
 --- !u!61 &3564604008148984553
 BoxCollider2D:
   m_ObjectHideFlags: 0

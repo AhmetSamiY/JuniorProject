@@ -132,15 +132,20 @@ public class EnemyArcher : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             rb.AddForce(direction * shootForce, ForceMode2D.Impulse);
             animatorr.ResetTrigger("Attack");// Flip the sprite based on dash direction
-            if (direction.x > 0 && !spriteRenderer.flipX) // Dash right
+            if (direction.x > 0 && !spriteRenderer.flipX)
             {
                 spriteRenderer.flipX = true;
             }
-            else if (direction.x < 0 && spriteRenderer.flipX) // Dash left
+            else if (direction.x < 0 && spriteRenderer.flipX)
             {
                 spriteRenderer.flipX = false;
             }
         }
+    }
+    public void FixFlip()
+    {
+        spriteRenderer.flipX = false;
+
     }
 
     private void Patrol()
