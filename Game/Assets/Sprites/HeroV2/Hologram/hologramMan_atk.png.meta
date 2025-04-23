@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: bb764d08168781a4b8e9b8744f695b47
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hologramMan_atk_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1
+        width: 35
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c4847a81617ff4b862a74a64608411
+      internalID: -858857522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1
+        width: 43
+        height: 60
+      alignment: 9
+      pivot: {x: 0.38345283, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ec2bf3b204626469d1d9b1a778a282
+      internalID: -1869432180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1
+        width: 47
+        height: 60
+      alignment: 9
+      pivot: {x: 0.35782868, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05470f242011e454c97c95db35482912
+      internalID: 248368557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 0.40255317, y: 0.50696033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62b9496f7295eb4ab9495fd8d090885
+      internalID: 594490431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1
+        width: 47
+        height: 60
+      alignment: 9
+      pivot: {x: 0.3459817, y: 0.5069605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2880f3d488b6e44f8349b646132694c
+      internalID: 1158637490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_5
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1
+        width: 58
+        height: 60
+      alignment: 9
+      pivot: {x: 0.48799923, y: 0.5046404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e87dd4243570418a5a715658e1fae
+      internalID: 157869020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1
+        width: 65
+        height: 60
+      alignment: 9
+      pivot: {x: 0.43360785, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b9f50dcaca32e4684830312cf4fe7e
+      internalID: -674880525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 65
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5406917, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3525cbeabf6260545b4929b93a465f51
+      internalID: 61671286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_8
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1
+        width: 65
+        height: 60
+      alignment: 9
+      pivot: {x: 0.44003344, y: 0.51624095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff5530291eea6042a12d30240db69bf
+      internalID: -1199418087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_9
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1
+        width: 65
+        height: 60
+      alignment: 9
+      pivot: {x: 0.54711634, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6282f8796e4e445ba880e9f594f251
+      internalID: 263270978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hologramMan_atk_10
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1
+        width: 65
+        height: 60
+      alignment: 9
+      pivot: {x: 0.43789157, y: 0.5092806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fb3440870eac840a55c56f15610edd
+      internalID: 1572464501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hologramMan_atk_0: -858857522
+      hologramMan_atk_1: -1869432180
+      hologramMan_atk_10: 1572464501
+      hologramMan_atk_2: 248368557
+      hologramMan_atk_3: 594490431
+      hologramMan_atk_4: 1158637490
+      hologramMan_atk_5: 157869020
+      hologramMan_atk_6: -674880525
+      hologramMan_atk_7: 61671286
+      hologramMan_atk_8: -1199418087
+      hologramMan_atk_9: 263270978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

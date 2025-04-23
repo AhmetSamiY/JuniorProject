@@ -73,6 +73,11 @@ public class PlayerController : MonoBehaviour
     public Transform FlamePoint;
     public GameObject FlamePrefab;
 
+    [Header("Hologram")]
+
+    public GameObject HoloPrefab;
+    public bool UsedHologram;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -163,6 +168,7 @@ public class PlayerController : MonoBehaviour
         RangedAttack();
         FlameThrower();
         CannonFire();
+        Hologram();
     }
 
     private void FixedUpdate()
@@ -475,8 +481,24 @@ public class PlayerController : MonoBehaviour
         CannonFired = true;
     }
 
+    void Hologram()
+    {
+        
+        if (UsedHologram == false)
+        {
+            if (Input.GetKey(KeyCode.Alpha3))
+        {
+                animatorr.SetTrigger("HoloCall");
+            }
+        }
+        
+    }
 
-
+    void SpawnHolo()
+    {
+        Instantiate(HoloPrefab, transform.position, transform.rotation);
+        UsedHologram = true;
+    }
 
 
 
