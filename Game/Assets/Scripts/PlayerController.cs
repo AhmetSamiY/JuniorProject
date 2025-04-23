@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         Healthbar.SetMaxHP(maxHealth);
         rb = GetComponent<Rigidbody2D>();
-        InvokeRepeating(nameof(AddShuriken), 0f, 5f);
+        InvokeRepeating(nameof(AddShuriken), 0f, 10f);
 
     }
 
