@@ -256,8 +256,11 @@ public class EnemySamurai : MonoBehaviour
     {
         if (dead) return;
         dead = true;
+        rb.velocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
         Debug.Log($"{gameObject.name} has died!");
         animator.SetTrigger("Dead");
+
     }
 }
 

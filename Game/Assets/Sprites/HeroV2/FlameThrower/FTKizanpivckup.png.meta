@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa208848a9cbac9489f38b9b20522570
+guid: 342dff93f3753f04792ba0982a6b7a78
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,127 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dash_0
+      name: FTKizanpivckup_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 20
         y: 0
-        width: 55
-        height: 52
+        width: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50593c64fae204b4f80eae750ff8ccf4
-      internalID: -1929412299
+      spriteID: d374ac9aff8837e488f973860ace91fa
+      internalID: 671816142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dash_1
+      name: FTKizanpivckup_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 320
         y: 0
-        width: 53
-        height: 56
+        width: 34
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2976a83028bed4b86ed8292440b159
-      internalID: 460879506
+      spriteID: acf95b28da8f38841b1ad693764cb327
+      internalID: -710139251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dash_2
+      name: FTKizanpivckup_2
       rect:
         serializedVersion: 2
-        x: 193
+        x: 620
         y: 0
-        width: 53
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 881d4876bd91e904b8d989dd864e985e
-      internalID: 1142809988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dash_3
-      rect:
-        serializedVersion: 2
-        x: 286
-        y: 0
-        width: 55
+        width: 32
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cff7cc1dc9f128b418838e2c007a117b
-      internalID: 105967069
+      spriteID: 8f6fbae1ba32438469112d681c609fb3
+      internalID: 1659145164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dash_4
+      name: FTKizanpivckup_3
       rect:
         serializedVersion: 2
-        x: 381
+        x: 920
         y: 0
-        width: 56
+        width: 32
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 896a9ce147322084194cb9ff8a6e636f
-      internalID: 895105345
+      spriteID: e503a966f1972bb428000cb63183961b
+      internalID: -1467061560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dash_5
+      name: FTKizanpivckup_4
       rect:
         serializedVersion: 2
-        x: 478
-        y: 0
-        width: 53
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1212
+        y: 1
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b592090a1382d57418e3901e08fe1f5d
-      internalID: -1899186197
+      spriteID: 1cbb01265303356418500a7244a2e424
+      internalID: 1026410497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FTKizanpivckup_5
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1
+        width: 63
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7389888558834f346ab0b75583f54893
+      internalID: 372006568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FTKizanpivckup_6
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 0
+        width: 63
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2641ee572aa86c42ad5bb40d225bcad
+      internalID: 893461999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FTKizanpivckup_7
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 0
+        width: 63
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241ce1d6d45ca7d4e93c064fece39593
+      internalID: -413797633
       vertices: []
       indices: 
       edges: []
@@ -259,12 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dash_0: -1929412299
-      Dash_1: 460879506
-      Dash_2: 1142809988
-      Dash_3: 105967069
-      Dash_4: 895105345
-      Dash_5: -1899186197
+      FTKizanpivckup_0: 671816142
+      FTKizanpivckup_1: -710139251
+      FTKizanpivckup_2: 1659145164
+      FTKizanpivckup_3: -1467061560
+      FTKizanpivckup_4: 1026410497
+      FTKizanpivckup_5: 372006568
+      FTKizanpivckup_6: 893461999
+      FTKizanpivckup_7: -413797633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

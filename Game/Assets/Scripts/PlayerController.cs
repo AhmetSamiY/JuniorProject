@@ -48,9 +48,13 @@ public class PlayerController : MonoBehaviour
     public bool CanThrowShuriken;
     public GameObject arrowPrefab; // Prefab for the arrow to shoot
     public Transform shootPoint; // Position where the arrow spawns
+    
+
+    [Header("Cannon")]
     public GameObject CannonBall;
     public Transform CannonshootPoint; // Position where the arrow spawns
-
+    public GameObject CannonEffect;
+    public bool CannonFired;
 
     [Header("Melee")]
 
@@ -63,10 +67,11 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
 
     [Header("FlameThrower")]
-    public GameObject skillArea;
     public bool UsedFlameThrower;
     public float flameAttackRange;
     public float flameAttackRangeX;
+    public Transform FlamePoint;
+    public GameObject FlamePrefab;
 
     void Start()
     {
@@ -157,7 +162,7 @@ public class PlayerController : MonoBehaviour
         animatorCheck();
         RangedAttack();
         FlameThrower();
-        
+        CannonFire();
     }
 
     private void FixedUpdate()
@@ -229,6 +234,7 @@ public class PlayerController : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        animatorr.SetTrigger("Dash");
 
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
@@ -247,7 +253,6 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(DashCooldown);
         canDash = true;
-
     }
     void StartAttack()
     {
@@ -407,8 +412,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Alpha1))
             {
-                //animatorr.SetTrigger("FlameThrower");
-                
+                animatorr.SetTrigger("FlameThrowerPick");
+                Debug.Log("Fire");
                 UsedFlameThrower = true;
 
             }
@@ -418,7 +423,7 @@ public class PlayerController : MonoBehaviour
     void FlameThrowerAttack()
     {
         Vector2 boxSize = new Vector2(flameAttackRangeX, flameAttackRange);
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.transform.position, boxSize, 0f, enemyLayers);
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(FlamePoint.transform.position, boxSize, 0f, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -444,13 +449,30 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    void SpawnFirePrefab()
+    {
+        Instantiate(FlamePrefab, attackPoint.position, transform.rotation);
+    }
     
     void CannonFire()
     {
-        if (true)
+        if (CannonFired == false)
         {
+            if (Input.GetKey(KeyCode.Alpha2))
+            {
+                animatorr.SetTrigger("CannonSpawn");
+                Debug.Log("Cannon");
 
+            }
         }
+    }
+
+    void SpawnCannonBall()
+    {
+        Instantiate(CannonBall, CannonshootPoint.position, transform.rotation);
+        Instantiate(CannonEffect, CannonshootPoint.position, transform.rotation);
+        CannonFired = true;
     }
 
 
@@ -465,7 +487,7 @@ public class PlayerController : MonoBehaviour
 
         Vector2 boxSize = new Vector2(flameAttackRangeX, flameAttackRange);
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(attackPoint.transform.position, boxSize);
+        Gizmos.DrawWireCube(FlamePoint.transform.position, boxSize);
     }
     public void TakeDamage(int damage)
     {
