@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kizanDronespawn_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78d0d6d8b3570c4d94c95c4ac6323f9
+      internalID: 180304196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a7961a40403e344ab42e69b648b90e
+      internalID: -202770071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d03ac12367cf94fac47b3b7321606d
+      internalID: 1621924738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa770d8549f644c8fd56f298fe5cd1
+      internalID: -2107026474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_4
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7617174aa7703a48ba67429d1f0ebcd
+      internalID: 1190956478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_5
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5130742d56af8f24c8ef68ac8dfae363
+      internalID: -1906876656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_6
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4649bc7a25bb42149907f68cbef9c1da
+      internalID: -1054241728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_7
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8e020a882572448bf6a640e3447041
+      internalID: 971335610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kizanDronespawn_8
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca60901fe9d64c4b9097256914150ab
+      internalID: 1927607970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kizanDronespawn_0: 180304196
+      kizanDronespawn_1: -202770071
+      kizanDronespawn_2: 1621924738
+      kizanDronespawn_3: -2107026474
+      kizanDronespawn_4: 1190956478
+      kizanDronespawn_5: -1906876656
+      kizanDronespawn_6: -1054241728
+      kizanDronespawn_7: 971335610
+      kizanDronespawn_8: 1927607970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

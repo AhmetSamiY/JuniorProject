@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5417abd449ff5434693320030df9a3fc
+      internalID: 26747275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 53
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b8742deccf4d4ba4fb3e6615607d2
+      internalID: -1610034493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 41
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7ca56cab673654ca3b5c2fad176d40
+      internalID: 932594848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 33
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce8741bf9282504ab26cf7720b957f4
+      internalID: -1297118280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 20
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af5a6e35656dfd49bd375bc3349b399
+      internalID: -1648623852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_5
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 25
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d56badee8764ac47827260d3cf271d8
+      internalID: 283937965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2ucarakgelme_atk_6
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 21
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38ba45ed7b82004795ba352393aa6f2
+      internalID: 1952326708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      drone2ucarakgelme_atk_0: 26747275
+      drone2ucarakgelme_atk_1: -1610034493
+      drone2ucarakgelme_atk_12: -2071646486
+      drone2ucarakgelme_atk_13: 1709845837
+      drone2ucarakgelme_atk_14: -1981773347
+      drone2ucarakgelme_atk_15: 242416071
+      drone2ucarakgelme_atk_2: 932594848
+      drone2ucarakgelme_atk_4: -1297118280
+      drone2ucarakgelme_atk_5: 283937965
+      drone2ucarakgelme_atk_6: 1952326708
+      drone2ucarakgelme_atk_7: -1648623852
+      drone2ucarakgelme_atk_8: 884228809
+      drone2ucarakgelme_atk_9: 1149955337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

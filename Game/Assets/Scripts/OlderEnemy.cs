@@ -147,7 +147,17 @@ public class OlderEnemy : MonoBehaviour
 
     void Die()
     {
+        if (dead) return;
         dead = true;
+        rb.velocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
+
+        CapsuleCollider2D col = GetComponent<CapsuleCollider2D>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
         Debug.Log($"{gameObject.name} has died!");
         animator.SetTrigger("Dead");
     }

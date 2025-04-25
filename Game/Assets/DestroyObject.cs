@@ -7,11 +7,15 @@ public class DestroyObject : MonoBehaviour
     public float destroyTime;
     void Start()
     {
-        Destroy(gameObject, destroyTime);
     }
 
     void Update()
     {
         
+    }
+
+    void DestroyFlame()
+    {
+        Destroy(gameObject);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5fe2c86e3af27a4bb7e38dad6659181
+guid: c27ec0ab75054724ea24d3bb2c06762b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,341 +93,451 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grassAnim_309x21_0
+      name: drone2_atk_revize_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 63
-        width: 309
-        height: 21
+        x: 32
+        y: 20
+        width: 13
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 443b3eeeef1cf444a9a27e36a5d329e3
-      internalID: 1209654754
+      spriteID: 5c9eb52e77b67274a8c8496e4b590e98
+      internalID: -1511069232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_1
+      name: drone2_atk_revize_1
       rect:
         serializedVersion: 2
-        x: 309
-        y: 63
-        width: 309
-        height: 21
+        x: 103
+        y: 20
+        width: 13
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44598a0cf1391c546aa52ebd89f390ec
-      internalID: 1438166701
+      spriteID: 3d30bc2b966f0a043b67a597048e1e76
+      internalID: 960364593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_2
+      name: drone2_atk_revize_2
       rect:
         serializedVersion: 2
-        x: 618
-        y: 63
-        width: 309
-        height: 21
+        x: 174
+        y: 19
+        width: 13
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a729e03e9c28774985ada593a6c5356
-      internalID: -1642230547
+      spriteID: a5c1e88141d669e4696421ce4340ad7a
+      internalID: 1710540620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_3
+      name: drone2_atk_revize_3
       rect:
         serializedVersion: 2
-        x: 927
-        y: 63
-        width: 309
-        height: 21
+        x: 245
+        y: 13
+        width: 17
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbcb527beed2e3f4bbc9558925976a97
-      internalID: 702374562
+      spriteID: 41cae6422b768d842b58ad6960fe3d71
+      internalID: -1556689126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_4
+      name: drone2_atk_revize_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 42
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98d5748c8de841e439dca09f633da3be
-      internalID: 14412580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_5
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 42
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57ff9e6bcda20db439b3f856742366d4
-      internalID: -687703723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_6
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 42
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79a599003e323b04db00a1cb04dcc249
-      internalID: -1955229359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_7
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 42
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3340ebdd44809fa46aa15f213693cfda
-      internalID: 1144033854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 21
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6da407bba9cbbe14ba9a796005a03d7c
-      internalID: 1707529859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_9
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 21
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6845e2ddf421d7d4f97a04abae6bd7a1
-      internalID: -957638016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_10
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 21
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6cf8cb9cec6b68468564404d429ecb3
-      internalID: 26016780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_11
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 21
-        width: 309
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59239d1e635b96c4db29fa7688ba5b95
-      internalID: 596690566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grassAnim_309x21_12
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 316
         y: 0
-        width: 309
-        height: 21
+        width: 45
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a73b098d3415b64caa632d7aabf6b45
-      internalID: 839317546
+      spriteID: 8c3c1ad0499885044ace96934dc99fee
+      internalID: 1722651100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_13
+      name: drone2_atk_revize_6
       rect:
         serializedVersion: 2
-        x: 309
+        x: 387
         y: 0
-        width: 309
-        height: 21
+        width: 45
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897001f9c35a6f640830579eb8c2d749
-      internalID: -2065216465
+      spriteID: 025d040f23b83eb49b92a57ca216b07c
+      internalID: -310686691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_14
+      name: drone2_atk_revize_8
       rect:
         serializedVersion: 2
-        x: 618
-        y: 0
-        width: 309
-        height: 21
+        x: 458
+        y: 1
+        width: 45
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400ebd1c7bfecb447b90235048278fcc
-      internalID: -1040750892
+      spriteID: fa3e95c786fb52548a341e897a9654b2
+      internalID: -25376164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grassAnim_309x21_15
+      name: drone2_atk_revize_9
       rect:
         serializedVersion: 2
-        x: 927
+        x: 529
         y: 0
-        width: 309
-        height: 21
+        width: 45
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23cec90af4833284294cce51a1e0efd8
-      internalID: 403878253
+      spriteID: 867f3a51fb2d2e846a705dad179fc1d7
+      internalID: 39092024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 21
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a779ef26cfee84bb9e895e4984cca8
+      internalID: -1388991359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 21
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9496bbe44da80434798c675b2042bb6d
+      internalID: 742410544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_12
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 21
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5ce9563446d044fb7d68db97cf50f2
+      internalID: 2126570831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_13
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 20
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acba5a553374c3449830bf19d73c9b32
+      internalID: 1574778713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_14
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 20
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35a8bff4cb934746aa23c18276a3c01
+      internalID: -1150954684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_15
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 20
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1922391daa28e0247bc76639bab7bb4e
+      internalID: -486210905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_16
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 19
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939f9a36c7e40f54caf42f3390eff805
+      internalID: 2110165724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_17
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 13
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c5e2c63b1eed1459ed3b5ffef22c62
+      internalID: -536826026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_19
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 0
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba51d5ab03eddc4896ee715eb3d2fad
+      internalID: -429704560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_20
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 0
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a7490dc9ef2f14b8e10d898215826a
+      internalID: 1934958610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_21
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f920701e8f0e940aa7f9866de48a3b
+      internalID: -1645296061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drone2_atk_revize_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ceb142f557d404088f4e567dad796e
+      internalID: -2096710214
       vertices: []
       indices: 
       edges: []
@@ -443,22 +553,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      grassAnim_309x21_0: 1209654754
-      grassAnim_309x21_1: 1438166701
-      grassAnim_309x21_10: 26016780
-      grassAnim_309x21_11: 596690566
-      grassAnim_309x21_12: 839317546
-      grassAnim_309x21_13: -2065216465
-      grassAnim_309x21_14: -1040750892
-      grassAnim_309x21_15: 403878253
-      grassAnim_309x21_2: -1642230547
-      grassAnim_309x21_3: 702374562
-      grassAnim_309x21_4: 14412580
-      grassAnim_309x21_5: -687703723
-      grassAnim_309x21_6: -1955229359
-      grassAnim_309x21_7: 1144033854
-      grassAnim_309x21_8: 1707529859
-      grassAnim_309x21_9: -957638016
+      drone2_atk_revize_0: -1511069232
+      drone2_atk_revize_1: 960364593
+      drone2_atk_revize_10: -1388991359
+      drone2_atk_revize_11: 742410544
+      drone2_atk_revize_12: 2126570831
+      drone2_atk_revize_13: 1574778713
+      drone2_atk_revize_14: -1150954684
+      drone2_atk_revize_15: -486210905
+      drone2_atk_revize_16: 2110165724
+      drone2_atk_revize_17: -536826026
+      drone2_atk_revize_18: 2095167658
+      drone2_atk_revize_19: -429704560
+      drone2_atk_revize_2: 1710540620
+      drone2_atk_revize_20: 1934958610
+      drone2_atk_revize_21: -1645296061
+      drone2_atk_revize_22: -2096710214
+      drone2_atk_revize_23: 1970841418
+      drone2_atk_revize_24: -1692491488
+      drone2_atk_revize_25: 700853141
+      drone2_atk_revize_3: -1556689126
+      drone2_atk_revize_4: 1722651100
+      drone2_atk_revize_5: 1894586942
+      drone2_atk_revize_6: -310686691
+      drone2_atk_revize_7: 1232161162
+      drone2_atk_revize_8: -25376164
+      drone2_atk_revize_9: 39092024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

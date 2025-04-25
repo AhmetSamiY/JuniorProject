@@ -493,6 +493,9 @@ MonoBehaviour:
   FlamePrefab: {fileID: 6847939166582961985, guid: 13e37c480af34c74db71f3cfaeca3fa6, type: 3}
   HoloPrefab: {fileID: 6582919670858013848, guid: b3ca6b9df617072458535247ec428636, type: 3}
   UsedHologram: 0
+  DronePrefab: {fileID: 124314154995795050, guid: 8a39d24e277d89147b016f50aee84fef, type: 3}
+  DroneSpawnPoint: {fileID: 786906939}
+  DroneCalled: 0
   Respawn: {fileID: 1639847070}
 --- !u!70 &117858039
 CapsuleCollider2D:
@@ -627,6 +630,7 @@ Transform:
   - {fileID: 21561040}
   - {fileID: 251875554}
   - {fileID: 678208991}
+  - {fileID: 786906939}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &117858043
@@ -1774,7 +1778,7 @@ Transform:
   m_GameObject: {fileID: 251875553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2561,7 +2565,7 @@ Transform:
   m_GameObject: {fileID: 523485616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3816,6 +3820,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &786906938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786906939}
+  m_Layer: 7
+  m_Name: DronePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786906939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786906938}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 117858042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &805588188
 GameObject:
   m_ObjectHideFlags: 0

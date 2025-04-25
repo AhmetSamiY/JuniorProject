@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -77,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
     public GameObject HoloPrefab;
     public bool UsedHologram;
+
+    [Header("Drone")]
+
+    public GameObject DronePrefab;
+    public Transform DroneSpawnPoint;
+    public bool DroneCalled;
 
     void Start()
     {
@@ -169,6 +176,7 @@ public class PlayerController : MonoBehaviour
         FlameThrower();
         CannonFire();
         Hologram();
+        DroneCall();
     }
 
     private void FixedUpdate()
@@ -458,7 +466,7 @@ public class PlayerController : MonoBehaviour
 
     void SpawnFirePrefab()
     {
-        Instantiate(FlamePrefab, attackPoint.position, transform.rotation);
+        Instantiate(FlamePrefab, FlamePoint.position, transform.rotation);
     }
     
     void CannonFire()
@@ -500,7 +508,26 @@ public class PlayerController : MonoBehaviour
         UsedHologram = true;
     }
 
+    
+    void DroneCall()
+    {
+        if (DroneCalled == false)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                animatorr.SetTrigger("DroneCall");
+                Debug.Log("Drone Called");
+            }
+        }
+        
+    }
+    void SpawnDrone()
+    {
+        Instantiate(DronePrefab, DroneSpawnPoint.position, Quaternion.identity);
+        DroneCalled = true;
 
+
+    }
 
     void OnDrawGizmosSelected()
     {
@@ -511,12 +538,21 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(FlamePoint.transform.position, boxSize);
     }
+    
     public void TakeDamage(int damage)
     {
+        if (isBlocking)
+        {
+            Debug.Log($"{gameObject.name} blocked the attack!");
+            animatorr.SetTrigger("BlockHit"); // Optional: if you have a block reaction animation
+            return;
+        }
+
         animatorr.SetTrigger("GetHit");
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
         Healthbar.SetHealth(currentHealth);
+
         if (currentHealth <= 0)
         {
             Die();
