@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 5
-  explosionForce: 2000
+  explosionForce: 200
   damage: 50
   explosionEffect: {fileID: 0}
   playerLayer:
