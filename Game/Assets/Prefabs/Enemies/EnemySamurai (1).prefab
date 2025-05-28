@@ -452,7 +452,7 @@ MonoBehaviour:
   currentHealth: 0
   dead: 0
   portalPrefab: {fileID: 4385735537287691324, guid: 2eb772518c85cd94596bf80a18d5fab0, type: 3}
-  enemyOldPrefab: {fileID: 4649399960302641122, guid: a0071809e484d6d48ba7c2eb4df80e29, type: 3}
+  enemyOldPrefab: {fileID: 6321565817535129440, guid: e1a16dc6f3d39dd4b823165bb0c0ca9a, type: 3}
   spawnOffsetBehind: {fileID: 6198364006698334855}
   dropImages:
   - {fileID: 21300000, guid: 9040462d6ecc4c14684f70be925ae774, type: 3}

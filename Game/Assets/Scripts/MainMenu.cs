@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartButton()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void ExitButton()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class BossController : MonoBehaviour
 {
     [Header("Movement")]
@@ -266,7 +267,33 @@ public class BossController : MonoBehaviour
         Debug.Log($"{gameObject.name} has died!");
         animator.SetTrigger("Dead");
     }
+    void NextScene()
+    {
+        if (dead)
+        {
+            StartCoroutine(DieWithDelay());
 
+        }   
+    }
+    private IEnumerator DieWithDelay()
+    {
+        // Optional: Play death animation or sound here
+        yield return new WaitForSeconds(2f);
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        Debug.Log("Current Scene Index: " + currentSceneIndex);
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+            Debug.Log("Loading next level: " + nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("No more levels. End of game.");
+            // Optionally load main menu or credits
+        }
+    }
 
     public void CallArrowRain()
     {
