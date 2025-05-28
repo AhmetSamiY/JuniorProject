@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class BossController : MonoBehaviour
 {
     [Header("Movement")]
@@ -26,8 +26,11 @@ public class BossController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
 
-    public int maxHealth; // Maximum health of the enemy
-    public int currentHealth;
+    public float maxHealth; // Maximum health of the enemy
+    public float currentHealth;
+    public GameObject hpBarPrefab;
+    public Image hpFill;
+    private Transform hpBarInstance;
     public bool dead;
 
 
@@ -49,7 +52,13 @@ public class BossController : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        GameObject bar = Instantiate(hpBarPrefab, transform);
+        bar.transform.localPosition = new Vector3(0, 2f, 0);
+
+        hpBarInstance = bar.transform;
+        hpFill = bar.transform.Find("HPBar_BG/HPBar_Fill").GetComponent<Image>();
+
+        UpdateHPBar();
         if (spriteRenderer != null)
         {
             originalColor = spriteRenderer.color; // Save the original color
@@ -209,8 +218,9 @@ public class BossController : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        animator.SetTrigger("HitTaken");
+         currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+        UpdateHPBar();
 
         Debug.Log($"{gameObject.name} took {damage} damage! Remaining health: {currentHealth}");
         if (spriteRenderer != null)
@@ -221,6 +231,15 @@ public class BossController : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+        }
+    }
+    void UpdateHPBar()
+    {
+        if (hpFill != null && maxHealth > 0f)
+        {
+            hpFill.fillAmount = currentHealth / maxHealth;
+            Debug.Log($"Health: {currentHealth} / {maxHealth}, Fill: {currentHealth / maxHealth}");
+
         }
     }
     private IEnumerator ShowDamageEffect()

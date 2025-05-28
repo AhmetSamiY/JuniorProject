@@ -1,0 +1,842 @@
+fileFormatVersion: 2
+guid: ec7637f20ccc80943a896678284cff1b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa446b39c6eb6f45a7cbd828109e26b
+      internalID: 621116684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb596a5f9f0fe084981c30c37d14ebaf
+      internalID: -577851572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4951a8efcd413439df8dfe2dc33aef
+      internalID: -439376355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_3
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48faa2570bb2d354cb6d998947fe09f7
+      internalID: 325984668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_4
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 0
+        width: 69
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db181260fe0e934da6197183cf834de
+      internalID: -1012286142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_5
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 68
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de3eed266aca1f4aae6a91b24119c1b
+      internalID: 257734411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_6
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 0
+        width: 65
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e829f80d79d181b4f88725d55cd11075
+      internalID: -1195243137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_7
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 0
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c44cbcb05a7b3f4fbca6b07c15419c5
+      internalID: 553060979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_8
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 0
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0579c1f729db4f45acb9348f4a83d12
+      internalID: -1884948649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_9
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 0
+        width: 133
+        height: 72
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4fa10b5741c984eb042ff620eb30d1
+      internalID: -1654776268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_10
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 0
+        width: 147
+        height: 68
+      alignment: 9
+      pivot: {x: 0.15, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e970110147e8fb46a873e5e026630f4
+      internalID: 300621221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_11
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 0
+        width: 160
+        height: 67
+      alignment: 9
+      pivot: {x: 0.2, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5469eab7af02f4e4bb59bb8b0ceb2de1
+      internalID: -1611517580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_12
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 0
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95655f42e0718004d9489576c6414034
+      internalID: -1735592442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_13
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 0
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658b47748d294864abd71ca549b148e0
+      internalID: -1901687440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_14
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 0
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a0d522d2c957644af5c282bc11a3ed
+      internalID: -1402194019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_15
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 0
+        width: 138
+        height: 67
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a183ae9fac96d7a46b1a3b194eb589b0
+      internalID: -1938630318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_16
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 0
+        width: 104
+        height: 67
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd579bc5c0c55c43bceb65ecd366c4d
+      internalID: 114380326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_17
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 133
+        height: 67
+      alignment: 9
+      pivot: {x: 0.15, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72e7be552c71f84ba8e59ac2c3b6183
+      internalID: 1034576322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_18
+      rect:
+        serializedVersion: 2
+        x: 3353
+        y: 0
+        width: 103
+        height: 67
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a513f65cd6e501246a5371fc4f27d004
+      internalID: 897025189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_19
+      rect:
+        serializedVersion: 2
+        x: 3547
+        y: 0
+        width: 86
+        height: 68
+      alignment: 9
+      pivot: {x: 0.15, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cacec75128cc34cad86883f8ce8a70
+      internalID: 102269940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_20
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 0
+        width: 87
+        height: 68
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea36e1a6ea336104f85a695bb41fab2f
+      internalID: -1984017568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_21
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 0
+        width: 86
+        height: 68
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b3f83ce37fefc4580de82554b2edd5
+      internalID: -218255825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_22
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 0
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bbe8b22106bd144be0cd820e686234
+      internalID: 1040691449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_23
+      rect:
+        serializedVersion: 2
+        x: 4287
+        y: 0
+        width: 76
+        height: 90
+      alignment: 9
+      pivot: {x: 0.2, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97891739232b38c4d883a6d24267dad1
+      internalID: -1916718518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_24
+      rect:
+        serializedVersion: 2
+        x: 4472
+        y: 0
+        width: 83
+        height: 77
+      alignment: 9
+      pivot: {x: 0.2, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4066127fae330e649bef4498126d3aed
+      internalID: 487694930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_25
+      rect:
+        serializedVersion: 2
+        x: 4657
+        y: 0
+        width: 110
+        height: 65
+      alignment: 9
+      pivot: {x: 0.2, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e0ae0d148c92f47af4dd586534c86b
+      internalID: 104813197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_26
+      rect:
+        serializedVersion: 2
+        x: 4842
+        y: 0
+        width: 112
+        height: 70
+      alignment: 9
+      pivot: {x: 0.2, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85e05620343a5f4b8878a356d007090
+      internalID: -700635232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_27
+      rect:
+        serializedVersion: 2
+        x: 5027
+        y: 0
+        width: 118
+        height: 79
+      alignment: 9
+      pivot: {x: 0.2, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e07f6a340f2145b37c323ec579c0b
+      internalID: -1601643790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_31
+      rect:
+        serializedVersion: 2
+        x: 5213
+        y: 0
+        width: 108
+        height: 78
+      alignment: 9
+      pivot: {x: 0.2, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3b17ee21657f64ba2a0f6d699035c5
+      internalID: -569272576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_35
+      rect:
+        serializedVersion: 2
+        x: 5398
+        y: 0
+        width: 104
+        height: 78
+      alignment: 9
+      pivot: {x: 0.2, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176348a37d8d0984383cb5df542fe93c
+      internalID: -1806009304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1_Older_Attack_Special_36
+      rect:
+        serializedVersion: 2
+        x: 5582
+        y: 0
+        width: 104
+        height: 65
+      alignment: 9
+      pivot: {x: 0.2, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48432b7601b72a04b8c4cb95f43184c7
+      internalID: 1069364636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Enemy_1_Older_Attack_Special_0: 621116684
+      Enemy_1_Older_Attack_Special_1: -577851572
+      Enemy_1_Older_Attack_Special_10: 300621221
+      Enemy_1_Older_Attack_Special_11: -1611517580
+      Enemy_1_Older_Attack_Special_12: -1735592442
+      Enemy_1_Older_Attack_Special_13: -1901687440
+      Enemy_1_Older_Attack_Special_14: -1402194019
+      Enemy_1_Older_Attack_Special_15: -1938630318
+      Enemy_1_Older_Attack_Special_16: 114380326
+      Enemy_1_Older_Attack_Special_17: 1034576322
+      Enemy_1_Older_Attack_Special_18: 897025189
+      Enemy_1_Older_Attack_Special_19: 102269940
+      Enemy_1_Older_Attack_Special_2: -439376355
+      Enemy_1_Older_Attack_Special_20: -1984017568
+      Enemy_1_Older_Attack_Special_21: -218255825
+      Enemy_1_Older_Attack_Special_22: 1040691449
+      Enemy_1_Older_Attack_Special_23: -1916718518
+      Enemy_1_Older_Attack_Special_24: 487694930
+      Enemy_1_Older_Attack_Special_25: 104813197
+      Enemy_1_Older_Attack_Special_26: -700635232
+      Enemy_1_Older_Attack_Special_27: -1601643790
+      Enemy_1_Older_Attack_Special_28: 2011586257
+      Enemy_1_Older_Attack_Special_29: 1258972156
+      Enemy_1_Older_Attack_Special_3: 325984668
+      Enemy_1_Older_Attack_Special_30: 1534616042
+      Enemy_1_Older_Attack_Special_31: -569272576
+      Enemy_1_Older_Attack_Special_32: 169189647
+      Enemy_1_Older_Attack_Special_33: 5947227
+      Enemy_1_Older_Attack_Special_34: 928913957
+      Enemy_1_Older_Attack_Special_35: -1806009304
+      Enemy_1_Older_Attack_Special_36: 1069364636
+      Enemy_1_Older_Attack_Special_37: -558310888
+      Enemy_1_Older_Attack_Special_38: 1065583622
+      Enemy_1_Older_Attack_Special_39: 1176695679
+      Enemy_1_Older_Attack_Special_4: -1012286142
+      Enemy_1_Older_Attack_Special_40: 1735481506
+      Enemy_1_Older_Attack_Special_41: -92937778
+      Enemy_1_Older_Attack_Special_42: -326664786
+      Enemy_1_Older_Attack_Special_43: -713270805
+      Enemy_1_Older_Attack_Special_44: -34004613
+      Enemy_1_Older_Attack_Special_45: -1519643535
+      Enemy_1_Older_Attack_Special_46: 925933407
+      Enemy_1_Older_Attack_Special_47: -1294729892
+      Enemy_1_Older_Attack_Special_48: 325379873
+      Enemy_1_Older_Attack_Special_49: -160035119
+      Enemy_1_Older_Attack_Special_5: 257734411
+      Enemy_1_Older_Attack_Special_50: 1105580130
+      Enemy_1_Older_Attack_Special_6: -1195243137
+      Enemy_1_Older_Attack_Special_7: 553060979
+      Enemy_1_Older_Attack_Special_8: -1884948649
+      Enemy_1_Older_Attack_Special_9: -1654776268
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

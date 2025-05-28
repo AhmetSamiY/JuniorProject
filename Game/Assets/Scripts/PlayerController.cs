@@ -85,8 +85,17 @@ public class PlayerController : MonoBehaviour
     public Transform DroneSpawnPoint;
     public bool DroneCalled;
 
+    [Header("Sounds")]
+    private AudioSource audioSource;
+    public AudioClip[] katanaSlashClips;
+    public AudioClip ArrowSound;
+    public AudioClip EffortSound;
+    public AudioClip DamageTakenSound;
+
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         Healthbar.SetMaxHP(maxHealth);
         rb = GetComponent<Rigidbody2D>();
@@ -116,7 +125,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             JumpBufferTimer = JumpBufferTime;
-
+            PlayEffortSound();
 
         }
         else
@@ -494,7 +503,7 @@ public class PlayerController : MonoBehaviour
         
         if (UsedHologram == false)
         {
-            if (Input.GetKey(KeyCode.Alpha3))
+            if (Input.GetKey(KeyCode.Alpha4))
         {
                 animatorr.SetTrigger("HoloCall");
             }
@@ -513,7 +522,7 @@ public class PlayerController : MonoBehaviour
     {
         if (DroneCalled == false)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 animatorr.SetTrigger("DroneCall");
                 Debug.Log("Drone Called");
@@ -559,6 +568,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void PlayKatanaSlashSound()
+    {
+        if (katanaSlashClips.Length == 0) return;
+
+        // Pick a random clip
+        int index = Random.Range(0, katanaSlashClips.Length);
+        AudioClip selectedClip = katanaSlashClips[index];
+
+        // Play it
+        audioSource.PlayOneShot(selectedClip);
+    }
+    public void PlayArrowSound()
+    {
+        if (ArrowSound != null)
+        {
+            audioSource.PlayOneShot(ArrowSound);
+        }
+    }
+
+    public void PlayEffortSound()
+    {
+        if (EffortSound != null)
+        {
+            audioSource.PlayOneShot(EffortSound);
+        }
+    }
+
+    public void PlayDamageTakenSound()
+    {
+        if (DamageTakenSound != null)
+        {
+            audioSource.PlayOneShot(DamageTakenSound);
+        }
+    }
 
     public Transform Respawn;
     void Die()

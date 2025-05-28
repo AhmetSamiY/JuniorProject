@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class EnemyArcher : MonoBehaviour
 {
+    public Sprite[] dropImages; // Assign 4 images
+    public GameObject imageDropPrefab;
 
     public Transform player;
     public GameObject arrowPrefab;
+    public GameObject SpecialarrowPrefab;
+
     public float shootInterval;
     public float shootForce;
     public float detectionRange;
@@ -45,6 +49,7 @@ public class EnemyArcher : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
         playertagged = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         if (playertagged == null)
@@ -106,15 +111,28 @@ public class EnemyArcher : MonoBehaviour
     {
         if (Time.time - lastShotTime >= shootInterval)
         {
-            animatorr.SetTrigger("Attack");
+            float specialChance = animatorr.GetFloat("Special"); // Get current "Special" value
+
+            if (Random.value <= specialChance)
+            {
+                animatorr.SetTrigger("ArcherSpecial");
+            }
+            else
+            {
+                animatorr.SetTrigger("Attack");
+            }
 
             Vector2 direction = (player.position - transform.position).normalized;
-
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
             transform.rotation = Quaternion.Euler(0, angle, 0);
-        }
 
+            
+        }
+    }
+   private void CheckSpecial()
+    {
+        float newSpecialChance = Random.Range(0f, 1f);
+        animatorr.SetFloat("Special", newSpecialChance);
 
     }
 
@@ -132,6 +150,31 @@ public class EnemyArcher : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             rb.AddForce(direction * shootForce, ForceMode2D.Impulse);
             animatorr.ResetTrigger("Attack");// Flip the sprite based on dash direction
+            if (direction.x > 0 && !spriteRenderer.flipX)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (direction.x < 0 && spriteRenderer.flipX)
+            {
+                spriteRenderer.flipX = false;
+            }
+        }
+    }
+
+    public Transform SpecialArrowSpawn;
+    private void SpecialShootArrow()
+    {
+        if (Time.time - lastShotTime >= shootInterval)
+        {
+            lastShotTime = Time.time;
+            // Instantiate the arrow
+            GameObject arrow = Instantiate(SpecialarrowPrefab, SpecialArrowSpawn.transform.position, Quaternion.identity);
+
+            // Get the arrow's Rigidbody2D component and apply force
+            Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
+            Vector2 direction = (player.position - transform.position).normalized;
+            rb.AddForce(direction * shootForce * 2, ForceMode2D.Impulse);
+            animatorr.ResetTrigger("SpecialAttack");// Flip the sprite based on dash direction
             if (direction.x > 0 && !spriteRenderer.flipX)
             {
                 spriteRenderer.flipX = true;
@@ -242,6 +285,42 @@ public class EnemyArcher : MonoBehaviour
         }
     }
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip arrowShotClip;
+    public AudioClip deathClip;
+    public AudioClip damageTakenClip;
+    public AudioClip katanaClip1;
+    public AudioClip katanaClip2;
+
+    private int katanaToggle = 0;
+
+    public void PlayArrowShot()
+    {
+        audioSource.PlayOneShot(arrowShotClip);
+    }
+
+    public void PlayDeath()
+    {
+        audioSource.PlayOneShot(deathClip);
+    }
+
+    public void PlayDamageTaken()
+    {
+        audioSource.PlayOneShot(damageTakenClip);
+    }
+
+    public void PlayKatana()
+    {
+        // Alternate between the two katana sounds
+        AudioClip clip = katanaToggle == 0 ? katanaClip1 : katanaClip2;
+        audioSource.PlayOneShot(clip);
+        katanaToggle = 1 - katanaToggle;
+    }
+
+
+
+
     void Die()
     {
         if (dead) return;
@@ -254,6 +333,15 @@ public class EnemyArcher : MonoBehaviour
         {
             col.enabled = false;
         }
+        int dropIndex = Random.Range(0, dropImages.Length);
+        GameObject dropped = Instantiate(imageDropPrefab, transform.position, Quaternion.identity);
+
+        SpriteRenderer sr = dropped.GetComponent<SpriteRenderer>();
+        sr.sprite = dropImages[dropIndex];
+
+        // Tell the drop which index it is
+        DropItem dropItem = dropped.GetComponent<DropItem>();
+        dropItem.dropIndex = dropIndex;
 
         Debug.Log($"{gameObject.name} has died!");
         animatorr.SetTrigger("Dead");

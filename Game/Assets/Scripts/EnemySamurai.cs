@@ -42,9 +42,22 @@ public class EnemySamurai : MonoBehaviour
     public Transform spawnOffsetBehind;
 
 
+    public Sprite[] dropImages; // Assign 4 images
+    public GameObject imageDropPrefab;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip arrowShotClip;
+    public AudioClip deathClip;
+    public AudioClip damageTakenClip;
+    public AudioClip katanaClip1;
+    public AudioClip katanaClip2;
+
+    private int katanaToggle = 0;
 
     void Start()
     {
+
         currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();
@@ -61,6 +74,7 @@ public class EnemySamurai : MonoBehaviour
         // Start the 30-second check coroutine when spawned
         StartCoroutine(CheckAndSpawnOldAfterTime(30f));
     }
+
 
     void Update()
     {
@@ -252,6 +266,30 @@ public class EnemySamurai : MonoBehaviour
         Instantiate(enemyOldPrefab, spawnPosition, Quaternion.identity);
         Destroy(portal); // Clean up the portal
     }
+    
+    public void PlayArrowShot()
+    {
+        audioSource.PlayOneShot(arrowShotClip);
+    }
+
+    public void PlayDeath()
+    {
+        audioSource.PlayOneShot(deathClip);
+    }
+
+    public void PlayDamageTaken()
+    {
+        audioSource.PlayOneShot(damageTakenClip);
+    }
+
+    public void PlayKatana()
+    {
+        // Alternate between the two katana sounds
+        AudioClip clip = katanaToggle == 0 ? katanaClip1 : katanaClip2;
+        audioSource.PlayOneShot(clip);
+        katanaToggle = 1 - katanaToggle;
+    }
+
 
     void Die()
     {
@@ -268,6 +306,18 @@ public class EnemySamurai : MonoBehaviour
 
         Debug.Log($"{gameObject.name} has died!");
         animator.SetTrigger("Dead");
+
+        int dropIndex = Random.Range(0, dropImages.Length);
+        GameObject dropped = Instantiate(imageDropPrefab, transform.position, Quaternion.identity);
+
+        SpriteRenderer sr = dropped.GetComponent<SpriteRenderer>();
+        sr.sprite = dropImages[dropIndex];
+
+        // Tell the drop which index it is
+        DropItem dropItem = dropped.GetComponent<DropItem>();
+        dropItem.dropIndex = dropIndex;
+
+
     }
 }
 
